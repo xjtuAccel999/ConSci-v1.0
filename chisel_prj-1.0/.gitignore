@@ -1,0 +1,9 @@
+.idea/**
+verilog/**
+project/**
+target/**
+generated/**
+.bsp/**
+.vscode/**
+.metals/**
+*.log
