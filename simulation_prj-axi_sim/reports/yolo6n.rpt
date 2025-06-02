@@ -1,0 +1,1505 @@
+[ log ]: Compilation time: 0:02.34
+[ log ]: Running simulation...
+2024-01-14 22:34:06
+[ log ]: stbi_load w = 768
+[ log ]: stbi_load h = 576
+[ log ]: stbi_load c = 3
+[ log ]: stbi_load desired_channels = 3
+[ log ]: models/yolov6n/yolov6n_int8.param is 15309 bytes
+[ log ]: models/yolov6n/yolov6n_int8.bin is 4831104 bytes
+[ log ]: Forward Padding on CPU, shape = (640, 480, 3, 1), dims = 3
+[ log ]: Forward Scale on NPU, shape = (640, 480, 3, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (640, 480, 3, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 640, ifm_h = 480, ifm_c = 3
+[ log ]: ofm_w = 320, ofm_h = 240, ofm_c = 16
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 127.33060, dequant_ptr = (nil), bias_ptr = 0x7fba8da68860 
+[ log ]: current conv layer id is 0
+[ log ]: (iw, ih, ic, oc) = (640, 480, 3, 16), op = 0
+[ log ]: conv_time = 2123380
+[ log ]: time_dma_ch0_r = 327040, => 15.402%
+[ log ]: time_dma_ch1_r = 316200, => 14.891%
+[ log ]: time_dma_ch0_w = 153600, => 7.234%
+[ log ]: time_dma_ch1_w = 153600, => 7.234%
+[ log ]: time_ifmbuf_load = 1724080, => 81.195%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 76800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 320, ifm_h = 240, ifm_c = 16
+[ log ]: ofm_w = 160, ofm_h = 120, ofm_c = 32
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 7.74226, dequant_ptr = (nil), bias_ptr = 0x7fba8da6ad40 
+[ log ]: current conv layer id is 1
+[ log ]: (iw, ih, ic, oc) = (320, 240, 16, 32), op = 0
+[ log ]: conv_time = 225280
+[ log ]: time_dma_ch0_r = 113260, => 50.275%
+[ log ]: time_dma_ch1_r = 110590, => 49.090%
+[ log ]: time_dma_ch0_w = 38656, => 17.159%
+[ log ]: time_dma_ch1_w = 38144, => 16.932%
+[ log ]: time_ifmbuf_load = 124815, => 55.404%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 19200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 160, ifm_h = 120, ifm_c = 32
+[ log ]: ofm_w = 160, ofm_h = 120, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 6.98915, dequant_ptr = (nil), bias_ptr = 0x7fba8da6d2a0 
+[ log ]: current conv layer id is 2
+[ log ]: (iw, ih, ic, oc) = (160, 120, 32, 32), op = 0
+[ log ]: conv_time = 129461
+[ log ]: time_dma_ch0_r = 28654, => 22.133%
+[ log ]: time_dma_ch1_r = 27586, => 21.308%
+[ log ]: time_dma_ch0_w = 38528, => 29.760%
+[ log ]: time_dma_ch1_w = 38272, => 29.563%
+[ log ]: time_ifmbuf_load = 31611, => 24.417%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 8725, => 6.739%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 19200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 160, ifm_h = 120, ifm_c = 32
+[ log ]: ofm_w = 160, ofm_h = 120, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 4.46818, dequant_ptr = (nil), bias_ptr = 0x7fba8da6f800 
+[ log ]: current conv layer id is 3
+[ log ]: (iw, ih, ic, oc) = (160, 120, 32, 32), op = 0
+[ log ]: conv_time = 205919
+[ log ]: time_dma_ch0_r = 28654, => 13.915%
+[ log ]: time_dma_ch1_r = 27586, => 13.397%
+[ log ]: time_dma_ch0_w = 115584, => 56.131%
+[ log ]: time_dma_ch1_w = 114816, => 55.758%
+[ log ]: time_ifmbuf_load = 31611, => 15.351%
+[ log ]: time_ofmbuf_congest = 64946, => 31.540%
+[ log ]: time_dmasendbuf_congest = 92914, => 45.122%
+
+
+[ log ]: Forward Split on CPU, shape = (160, 120, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (160, 120, 32, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 160, ifm_h = 120, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 64
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 4.70897, dequant_ptr = (nil), bias_ptr = 0x7fba8da74140 
+[ log ]: current conv layer id is 4
+[ log ]: (iw, ih, ic, oc) = (160, 120, 32, 64), op = 0
+[ log ]: conv_time = 296165
+[ log ]: time_dma_ch0_r = 205352, => 69.337%
+[ log ]: time_dma_ch1_r = 204456, => 69.034%
+[ log ]: time_dma_ch0_w = 19328, => 6.526%
+[ log ]: time_dma_ch1_w = 19072, => 6.440%
+[ log ]: time_ifmbuf_load = 246315, => 83.168%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 9.07295, dequant_ptr = (nil), bias_ptr = 0x7fba8da7d3a0 
+[ log ]: current conv layer id is 5
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 64), op = 0
+[ log ]: conv_time = 101407
+[ log ]: time_dma_ch0_r = 13290, => 13.106%
+[ log ]: time_dma_ch1_r = 12250, => 12.080%
+[ log ]: time_dma_ch0_w = 19200, => 18.934%
+[ log ]: time_dma_ch1_w = 19200, => 18.934%
+[ log ]: time_ifmbuf_load = 14177, => 13.980%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 6.47772, dequant_ptr = (nil), bias_ptr = 0x7fba8da86600 
+[ log ]: current conv layer id is 6
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 64), op = 0
+[ log ]: conv_time = 101407
+[ log ]: time_dma_ch0_r = 13290, => 13.106%
+[ log ]: time_dma_ch1_r = 12250, => 12.080%
+[ log ]: time_dma_ch0_w = 19200, => 18.934%
+[ log ]: time_dma_ch1_w = 19200, => 18.934%
+[ log ]: time_ifmbuf_load = 14177, => 13.980%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 6.24490, dequant_ptr = (nil), bias_ptr = 0x7fba8da8f860 
+[ log ]: current conv layer id is 7
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 64), op = 0
+[ log ]: conv_time = 101407
+[ log ]: time_dma_ch0_r = 13290, => 13.106%
+[ log ]: time_dma_ch1_r = 12250, => 12.080%
+[ log ]: time_dma_ch0_w = 19200, => 18.934%
+[ log ]: time_dma_ch1_w = 19200, => 18.934%
+[ log ]: time_ifmbuf_load = 14177, => 13.980%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 6.32262, dequant_ptr = (nil), bias_ptr = 0x7fba8da98ac0 
+[ log ]: current conv layer id is 8
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 64), op = 0
+[ log ]: conv_time = 101331
+[ log ]: time_dma_ch0_r = 13290, => 13.115%
+[ log ]: time_dma_ch1_r = 12250, => 12.089%
+[ log ]: time_dma_ch0_w = 57600, => 56.843%
+[ log ]: time_dma_ch1_w = 57600, => 56.843%
+[ log ]: time_ifmbuf_load = 14177, => 13.991%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Split on CPU, shape = (80, 60, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 64, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 128
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 5.61766, dequant_ptr = (nil), bias_ptr = 0x7fba8daaad00 
+[ log ]: current conv layer id is 9
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 128), op = 0
+[ log ]: conv_time = 167640
+[ log ]: time_dma_ch0_r = 105512, => 62.940%
+[ log ]: time_dma_ch1_r = 100916, => 60.198%
+[ log ]: time_dma_ch0_w = 9728, => 5.803%
+[ log ]: time_dma_ch1_w = 9472, => 5.650%
+[ log ]: time_ifmbuf_load = 123032, => 73.391%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 9.53962, dequant_ptr = (nil), bias_ptr = 0x7fba8dacf160 
+[ log ]: current conv layer id is 10
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 128), op = 0
+[ log ]: conv_time = 97560
+[ log ]: time_dma_ch0_r = 13550, => 13.889%
+[ log ]: time_dma_ch1_r = 6474, => 6.636%
+[ log ]: time_dma_ch0_w = 9728, => 9.971%
+[ log ]: time_dma_ch1_w = 9472, => 9.709%
+[ log ]: time_ifmbuf_load = 9176, => 9.405%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 7.82902, dequant_ptr = (nil), bias_ptr = 0x7fba8daf35c0 
+[ log ]: current conv layer id is 11
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 128), op = 0
+[ log ]: conv_time = 97560
+[ log ]: time_dma_ch0_r = 13550, => 13.889%
+[ log ]: time_dma_ch1_r = 6474, => 6.636%
+[ log ]: time_dma_ch0_w = 9728, => 9.971%
+[ log ]: time_dma_ch1_w = 9472, => 9.709%
+[ log ]: time_ifmbuf_load = 9176, => 9.405%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 7.53040, dequant_ptr = (nil), bias_ptr = 0x7fba8db17a20 
+[ log ]: current conv layer id is 12
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 128), op = 0
+[ log ]: conv_time = 97560
+[ log ]: time_dma_ch0_r = 13550, => 13.889%
+[ log ]: time_dma_ch1_r = 6474, => 6.636%
+[ log ]: time_dma_ch0_w = 9728, => 9.971%
+[ log ]: time_dma_ch1_w = 9472, => 9.709%
+[ log ]: time_ifmbuf_load = 9176, => 9.405%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 7.58518, dequant_ptr = (nil), bias_ptr = 0x7fba8db3be80 
+[ log ]: current conv layer id is 13
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 128), op = 0
+[ log ]: conv_time = 97560
+[ log ]: time_dma_ch0_r = 13550, => 13.889%
+[ log ]: time_dma_ch1_r = 6474, => 6.636%
+[ log ]: time_dma_ch0_w = 9728, => 9.971%
+[ log ]: time_dma_ch1_w = 9472, => 9.709%
+[ log ]: time_ifmbuf_load = 9176, => 9.405%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 8.13997, dequant_ptr = (nil), bias_ptr = 0x7fba8db602e0 
+[ log ]: current conv layer id is 14
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 128), op = 0
+[ log ]: conv_time = 97560
+[ log ]: time_dma_ch0_r = 13550, => 13.889%
+[ log ]: time_dma_ch1_r = 6474, => 6.636%
+[ log ]: time_dma_ch0_w = 9728, => 9.971%
+[ log ]: time_dma_ch1_w = 9472, => 9.709%
+[ log ]: time_ifmbuf_load = 9176, => 9.405%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 7.71701, dequant_ptr = (nil), bias_ptr = 0x7fba8db84740 
+[ log ]: current conv layer id is 15
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 128), op = 0
+[ log ]: conv_time = 97485
+[ log ]: time_dma_ch0_r = 13550, => 13.900%
+[ log ]: time_dma_ch1_r = 6474, => 6.641%
+[ log ]: time_dma_ch0_w = 29184, => 29.937%
+[ log ]: time_dma_ch1_w = 28416, => 29.149%
+[ log ]: time_ifmbuf_load = 9176, => 9.413%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Split on CPU, shape = (40, 30, 128, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 128, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 256
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 7.43692, dequant_ptr = (nil), bias_ptr = 0x7fba8dbccb80 
+[ log ]: current conv layer id is 16
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 256), op = 0
+[ log ]: conv_time = 112141
+[ log ]: time_dma_ch0_r = 68368, => 60.966%
+[ log ]: time_dma_ch1_r = 52596, => 46.902%
+[ log ]: time_dma_ch0_w = 5120, => 4.566%
+[ log ]: time_dma_ch1_w = 4480, => 3.995%
+[ log ]: time_ifmbuf_load = 65225, => 58.163%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (256, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 256
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 256
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 11.10697, dequant_ptr = (nil), bias_ptr = 0x7fba8dc5d3e0 
+[ log ]: current conv layer id is 17
+[ log ]: (iw, ih, ic, oc) = (20, 15, 256, 256), op = 0
+[ log ]: conv_time = 103026
+[ log ]: time_dma_ch0_r = 37610, => 36.505%
+[ log ]: time_dma_ch1_r = 4702, => 4.564%
+[ log ]: time_dma_ch0_w = 5120, => 4.970%
+[ log ]: time_dma_ch1_w = 4480, => 4.348%
+[ log ]: time_ifmbuf_load = 10030, => 9.735%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (256, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 256
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 256
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 10.04414, dequant_ptr = (nil), bias_ptr = 0x7fba8dcedc40 
+[ log ]: current conv layer id is 18
+[ log ]: (iw, ih, ic, oc) = (20, 15, 256, 256), op = 0
+[ log ]: conv_time = 102951
+[ log ]: time_dma_ch0_r = 37610, => 36.532%
+[ log ]: time_dma_ch1_r = 4702, => 4.567%
+[ log ]: time_dma_ch0_w = 15360, => 14.920%
+[ log ]: time_dma_ch1_w = 13568, => 13.179%
+[ log ]: time_ifmbuf_load = 10030, => 9.742%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Split on CPU, shape = (20, 15, 256, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (20, 15, 256, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 256
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 10.21408, dequant_ptr = (nil), bias_ptr = 0x7fba8dd27180 
+[ log ]: current conv layer id is 19
+[ log ]: (iw, ih, ic, oc) = (20, 15, 256, 128), op = 0
+[ log ]: conv_time = 45321
+[ log ]: time_dma_ch0_r = 29032, => 64.059%
+[ log ]: time_dma_ch1_r = 26996, => 59.566%
+[ log ]: time_dma_ch0_w = 7680, => 16.946%
+[ log ]: time_dma_ch1_w = 6784, => 14.969%
+[ log ]: time_ifmbuf_load = 33367, => 73.624%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 6058, => 13.367%
+
+
+[ log ]: Forward Convolution on NPU, shape = (20, 15, 256, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 256
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 10.21408, dequant_ptr = (nil), bias_ptr = 0x7fba8dcf6480 
+[ log ]: current conv layer id is 20
+[ log ]: (iw, ih, ic, oc) = (20, 15, 256, 128), op = 0
+[ log ]: conv_time = 40468
+[ log ]: time_dma_ch0_r = 29032, => 71.741%
+[ log ]: time_dma_ch1_r = 26996, => 66.709%
+[ log ]: time_dma_ch0_w = 2560, => 6.326%
+[ log ]: time_dma_ch1_w = 2240, => 5.535%
+[ log ]: time_ifmbuf_load = 33367, => 82.453%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 16.79194, dequant_ptr = (nil), bias_ptr = 0x7fba8dd1a8e0 
+[ log ]: current conv layer id is 21
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 28974
+[ log ]: time_dma_ch0_r = 9602, => 33.140%
+[ log ]: time_dma_ch1_r = 2494, => 8.608%
+[ log ]: time_dma_ch0_w = 2560, => 8.836%
+[ log ]: time_dma_ch1_w = 2240, => 7.731%
+[ log ]: time_ifmbuf_load = 5102, => 17.609%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 19.72685, dequant_ptr = (nil), bias_ptr = 0x7fba8dd1ed40 
+[ log ]: current conv layer id is 22
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 13836
+[ log ]: time_dma_ch0_r = 2378, => 17.187%
+[ log ]: time_dma_ch1_r = 1526, => 11.029%
+[ log ]: time_dma_ch0_w = 7680, => 55.507%
+[ log ]: time_dma_ch1_w = 6784, => 49.032%
+[ log ]: time_ifmbuf_load = 2010, => 14.527%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 6059, => 43.792%
+
+
+[ log ]: Forward Split on CPU, shape = (20, 15, 128, 1), dims = 3
+[ log ]: Forward Pooling on NPU, shape input = (20, 15, 128, 1), dims = 3 ,pooling_type = 0,kernel = 5, stride = 1 ,padding = (2, 2, 2, 2) ,pad_mode = 1, pad_value = 0
+[ log ]: Forward Split on CPU, shape = (20, 15, 128, 1), dims = 3
+[ log ]: Forward Pooling on NPU, shape input = (20, 15, 128, 1), dims = 3 ,pooling_type = 0,kernel = 5, stride = 1 ,padding = (2, 2, 2, 2) ,pad_mode = 1, pad_value = 0
+[ log ]: Forward Split on CPU, shape = (20, 15, 128, 1), dims = 3
+[ log ]: Forward Pooling on NPU, shape input = (20, 15, 128, 1), dims = 3 ,pooling_type = 0,kernel = 5, stride = 1 ,padding = (2, 2, 2, 2) ,pad_mode = 1, pad_value = 0
+[ log ]: Forward Concat on CPU, shape = (20, 15, 128, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (20, 15, 512, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 512
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 21.25716, dequant_ptr = (nil), bias_ptr = 0x7fba8dd375c0 
+[ log ]: current conv layer id is 23
+[ log ]: (iw, ih, ic, oc) = (20, 15, 512, 128), op = 0
+[ log ]: conv_time = 77603
+[ log ]: time_dma_ch0_r = 57960, => 74.688%
+[ log ]: time_dma_ch1_r = 53876, => 69.425%
+[ log ]: time_dma_ch0_w = 2560, => 3.299%
+[ log ]: time_dma_ch1_w = 2240, => 2.886%
+[ log ]: time_ifmbuf_load = 66531, => 85.733%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 29.51788, dequant_ptr = (nil), bias_ptr = 0x7fba8dd5ba20 
+[ log ]: current conv layer id is 24
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 28899
+[ log ]: time_dma_ch0_r = 9602, => 33.226%
+[ log ]: time_dma_ch1_r = 2494, => 8.630%
+[ log ]: time_dma_ch0_w = 7680, => 26.575%
+[ log ]: time_dma_ch1_w = 6784, => 23.475%
+[ log ]: time_ifmbuf_load = 5102, => 17.655%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Concat on CPU, shape = (20, 15, 128, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (20, 15, 256, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 256
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 256
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 20.90993, dequant_ptr = (nil), bias_ptr = 0x7fba8dd6be60 
+[ log ]: current conv layer id is 25
+[ log ]: (iw, ih, ic, oc) = (20, 15, 256, 256), op = 0
+[ log ]: conv_time = 46932
+[ log ]: time_dma_ch0_r = 31184, => 66.445%
+[ log ]: time_dma_ch1_r = 27060, => 57.658%
+[ log ]: time_dma_ch0_w = 5120, => 10.909%
+[ log ]: time_dma_ch1_w = 4480, => 9.546%
+[ log ]: time_ifmbuf_load = 33431, => 71.233%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (256, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 256
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 27.19782, dequant_ptr = (nil), bias_ptr = 0x7fba8dd706c0 
+[ log ]: current conv layer id is 26
+[ log ]: (iw, ih, ic, oc) = (20, 15, 256, 64), op = 0
+[ log ]: conv_time = 9804
+[ log ]: time_dma_ch0_r = 3446, => 35.149%
+[ log ]: time_dma_ch1_r = 2774, => 28.295%
+[ log ]: time_dma_ch0_w = 3840, => 39.168%
+[ log ]: time_dma_ch1_w = 3392, => 34.598%
+[ log ]: time_ifmbuf_load = 3610, => 36.822%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 2018, => 20.583%
+
+
+[ log ]: Forward Split on CPU, shape = (20, 15, 64, 1), dims = 3
+[ log ]: Forward Deconvolution on CPU, shape = (20, 15, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 128, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 128
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 7.43692, dequant_ptr = (nil), bias_ptr = 0x7fba8dd82a20 
+[ log ]: current conv layer id is 27
+[ log ]: (iw, ih, ic, oc) = (40, 30, 128, 64), op = 0
+[ log ]: conv_time = 83943
+[ log ]: time_dma_ch0_r = 51636, => 61.513%
+[ log ]: time_dma_ch1_r = 51156, => 60.941%
+[ log ]: time_dma_ch0_w = 14592, => 17.383%
+[ log ]: time_dma_ch1_w = 14208, => 16.926%
+[ log ]: time_ifmbuf_load = 61749, => 73.561%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 12119, => 14.437%
+
+
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 64, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 5.61766, dequant_ptr = (nil), bias_ptr = 0x7fba8dd83c60 
+[ log ]: current conv layer id is 28
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 64), op = 0
+[ log ]: conv_time = 169461
+[ log ]: time_dma_ch0_r = 101108, => 59.664%
+[ log ]: time_dma_ch1_r = 100884, => 59.532%
+[ log ]: time_dma_ch0_w = 19200, => 11.330%
+[ log ]: time_dma_ch1_w = 19200, => 11.330%
+[ log ]: time_ifmbuf_load = 120952, => 71.375%
+[ log ]: time_ofmbuf_congest = 26319, => 15.531%
+[ log ]: time_dmasendbuf_congest = 8725, => 5.149%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 21.26456, dequant_ptr = (nil), bias_ptr = 0x7fba8dd8cec0 
+[ log ]: current conv layer id is 29
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 64), op = 0
+[ log ]: conv_time = 36819
+[ log ]: time_dma_ch0_r = 13290, => 36.095%
+[ log ]: time_dma_ch1_r = 12250, => 33.271%
+[ log ]: time_dma_ch0_w = 14592, => 39.632%
+[ log ]: time_dma_ch1_w = 14208, => 38.589%
+[ log ]: time_ifmbuf_load = 14177, => 38.505%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Concat on CPU, shape = (40, 30, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 192, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 192
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 54.24013, dequant_ptr = (nil), bias_ptr = 0x7fba8dd90100 
+[ log ]: current conv layer id is 30
+[ log ]: (iw, ih, ic, oc) = (40, 30, 192, 64), op = 0
+[ log ]: conv_time = 105335
+[ log ]: time_dma_ch0_r = 77428, => 73.506%
+[ log ]: time_dma_ch1_r = 76692, => 72.808%
+[ log ]: time_dma_ch0_w = 4864, => 4.618%
+[ log ]: time_dma_ch1_w = 4736, => 4.496%
+[ log ]: time_ifmbuf_load = 92538, => 87.851%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 20.52527, dequant_ptr = (nil), bias_ptr = 0x7fba8dd99360 
+[ log ]: current conv layer id is 31
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 27703
+[ log ]: time_dma_ch0_r = 4666, => 16.843%
+[ log ]: time_dma_ch1_r = 3562, => 12.858%
+[ log ]: time_dma_ch0_w = 4864, => 17.558%
+[ log ]: time_dma_ch1_w = 4736, => 17.096%
+[ log ]: time_ifmbuf_load = 4985, => 17.994%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 11.75161, dequant_ptr = (nil), bias_ptr = 0x7fba8dda25c0 
+[ log ]: current conv layer id is 32
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 27703
+[ log ]: time_dma_ch0_r = 4666, => 16.843%
+[ log ]: time_dma_ch1_r = 3562, => 12.858%
+[ log ]: time_dma_ch0_w = 4864, => 17.558%
+[ log ]: time_dma_ch1_w = 4736, => 17.096%
+[ log ]: time_ifmbuf_load = 4985, => 17.994%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 11.08935, dequant_ptr = (nil), bias_ptr = 0x7fba8ddab820 
+[ log ]: current conv layer id is 33
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 27703
+[ log ]: time_dma_ch0_r = 4666, => 16.843%
+[ log ]: time_dma_ch1_r = 3562, => 12.858%
+[ log ]: time_dma_ch0_w = 4864, => 17.558%
+[ log ]: time_dma_ch1_w = 4736, => 17.096%
+[ log ]: time_ifmbuf_load = 4985, => 17.994%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 10.96073, dequant_ptr = (nil), bias_ptr = 0x7fba8ddb4a80 
+[ log ]: current conv layer id is 34
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 27703
+[ log ]: time_dma_ch0_r = 4666, => 16.843%
+[ log ]: time_dma_ch1_r = 3562, => 12.858%
+[ log ]: time_dma_ch0_w = 4864, => 17.558%
+[ log ]: time_dma_ch1_w = 4736, => 17.096%
+[ log ]: time_ifmbuf_load = 4985, => 17.994%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 11.76377, dequant_ptr = (nil), bias_ptr = 0x7fba8ddb54e0 
+[ log ]: current conv layer id is 35
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 32), op = 0
+[ log ]: conv_time = 14541
+[ log ]: time_dma_ch0_r = 3080, => 21.181%
+[ log ]: time_dma_ch1_r = 2930, => 20.150%
+[ log ]: time_dma_ch0_w = 7296, => 50.175%
+[ log ]: time_dma_ch1_w = 7104, => 48.855%
+[ log ]: time_ifmbuf_load = 3355, => 23.073%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 6050, => 41.606%
+
+
+[ log ]: Forward Split on CPU, shape = (40, 30, 32, 1), dims = 3
+[ log ]: Forward Deconvolution on CPU, shape = (40, 30, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 64, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 64
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 5.61766, dequant_ptr = (nil), bias_ptr = 0x7fba8ddb9ec0 
+[ log ]: current conv layer id is 36
+[ log ]: (iw, ih, ic, oc) = (80, 60, 64, 32), op = 0
+[ log ]: conv_time = 164231
+[ log ]: time_dma_ch0_r = 100954, => 61.471%
+[ log ]: time_dma_ch1_r = 100868, => 61.418%
+[ log ]: time_dma_ch0_w = 28800, => 17.536%
+[ log ]: time_dma_ch1_w = 28800, => 17.536%
+[ log ]: time_ifmbuf_load = 120789, => 73.548%
+[ log ]: time_ofmbuf_congest = 32748, => 19.940%
+[ log ]: time_dmasendbuf_congest = 22219, => 13.529%
+
+
+[ log ]: Forward Convolution on NPU, shape = (160, 120, 32, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 160, ifm_h = 120, ifm_c = 32
+[ log ]: ofm_w = 160, ofm_h = 120, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 4.70897, dequant_ptr = (nil), bias_ptr = 0x7fba8ddba400 
+[ log ]: current conv layer id is 37
+[ log ]: (iw, ih, ic, oc) = (160, 120, 32, 32), op = 0
+[ log ]: conv_time = 339999
+[ log ]: time_dma_ch0_r = 203124, => 59.743%
+[ log ]: time_dma_ch1_r = 200392, => 58.939%
+[ log ]: time_dma_ch0_w = 38400, => 11.294%
+[ log ]: time_dma_ch1_w = 38400, => 11.294%
+[ log ]: time_ifmbuf_load = 243045, => 71.484%
+[ log ]: time_ofmbuf_congest = 72105, => 21.207%
+[ log ]: time_dmasendbuf_congest = 13087, => 3.849%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 19200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 160, ifm_h = 120, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 16.51335, dequant_ptr = (nil), bias_ptr = 0x7fba8ddbc960 
+[ log ]: current conv layer id is 38
+[ log ]: (iw, ih, ic, oc) = (160, 120, 32, 32), op = 0
+[ log ]: conv_time = 75927
+[ log ]: time_dma_ch0_r = 28474, => 37.502%
+[ log ]: time_dma_ch1_r = 27316, => 35.977%
+[ log ]: time_dma_ch0_w = 28992, => 38.184%
+[ log ]: time_dma_ch1_w = 28608, => 37.678%
+[ log ]: time_ifmbuf_load = 31411, => 41.370%
+[ log ]: time_ofmbuf_congest = 15846, => 20.870%
+[ log ]: time_dmasendbuf_congest = 22214, => 29.257%
+
+
+[ log ]: Forward Concat on CPU, shape = (80, 60, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 96, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 96
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 36.33531, dequant_ptr = (nil), bias_ptr = 0x7fba8ddbd6a0 
+[ log ]: current conv layer id is 39
+[ log ]: (iw, ih, ic, oc) = (80, 60, 96, 32), op = 0
+[ log ]: conv_time = 206454
+[ log ]: time_dma_ch0_r = 152090, => 73.668%
+[ log ]: time_dma_ch1_r = 150596, => 72.944%
+[ log ]: time_dma_ch0_w = 9600, => 4.650%
+[ log ]: time_dma_ch1_w = 9600, => 4.650%
+[ log ]: time_ifmbuf_load = 181913, => 88.113%
+[ log ]: time_ofmbuf_congest = 7333, => 3.552%
+[ log ]: time_dmasendbuf_congest = 4363, => 2.113%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 21.01640, dequant_ptr = (nil), bias_ptr = 0x7fba8ddbfc00 
+[ log ]: current conv layer id is 40
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 32898
+[ log ]: time_dma_ch0_r = 7352, => 22.348%
+[ log ]: time_dma_ch1_r = 6818, => 20.725%
+[ log ]: time_dma_ch0_w = 9600, => 29.181%
+[ log ]: time_dma_ch1_w = 9600, => 29.181%
+[ log ]: time_ifmbuf_load = 8133, => 24.722%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 10.83319, dequant_ptr = (nil), bias_ptr = 0x7fba8ddc2160 
+[ log ]: current conv layer id is 41
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 32898
+[ log ]: time_dma_ch0_r = 7352, => 22.348%
+[ log ]: time_dma_ch1_r = 6818, => 20.725%
+[ log ]: time_dma_ch0_w = 9600, => 29.181%
+[ log ]: time_dma_ch1_w = 9600, => 29.181%
+[ log ]: time_ifmbuf_load = 8133, => 24.722%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 11.33480, dequant_ptr = (nil), bias_ptr = 0x7fba8ddc46c0 
+[ log ]: current conv layer id is 42
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 32898
+[ log ]: time_dma_ch0_r = 7352, => 22.348%
+[ log ]: time_dma_ch1_r = 6818, => 20.725%
+[ log ]: time_dma_ch0_w = 9600, => 29.181%
+[ log ]: time_dma_ch1_w = 9600, => 29.181%
+[ log ]: time_ifmbuf_load = 8133, => 24.722%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 4800, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 10.65445, dequant_ptr = (nil), bias_ptr = 0x7fba8ddc6c20 
+[ log ]: current conv layer id is 43
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 51799
+[ log ]: time_dma_ch0_r = 7352, => 14.193%
+[ log ]: time_dma_ch1_r = 6818, => 13.162%
+[ log ]: time_dma_ch0_w = 28800, => 55.600%
+[ log ]: time_dma_ch1_w = 28800, => 55.600%
+[ log ]: time_ifmbuf_load = 8133, => 15.701%
+[ log ]: time_ofmbuf_congest = 15846, => 30.591%
+[ log ]: time_dmasendbuf_congest = 22217, => 42.891%
+
+
+[ log ]: Forward Split on CPU, shape = (80, 60, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 32, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 9.39055, dequant_ptr = (nil), bias_ptr = 0x7fba8de883c0 
+[ log ]: current conv layer id is 44
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 104670
+[ log ]: time_dma_ch0_r = 51162, => 48.879%
+[ log ]: time_dma_ch1_r = 49796, => 47.574%
+[ log ]: time_dma_ch0_w = 28800, => 27.515%
+[ log ]: time_dma_ch1_w = 28800, => 27.515%
+[ log ]: time_ifmbuf_load = 61260, => 58.527%
+[ log ]: time_ofmbuf_congest = 34924, => 33.366%
+[ log ]: time_dmasendbuf_congest = 22219, => 21.228%
+
+
+[ log ]: Forward Split on CPU, shape = (80, 60, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 32, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 31.70187, dequant_ptr = (nil), bias_ptr = 0x7fba8de8dd20 
+[ log ]: current conv layer id is 45
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 86537
+[ log ]: time_dma_ch0_r = 51674, => 59.713%
+[ log ]: time_dma_ch1_r = 49796, => 57.543%
+[ log ]: time_dma_ch0_w = 9600, => 11.094%
+[ log ]: time_dma_ch1_w = 9600, => 11.094%
+[ log ]: time_ifmbuf_load = 61772, => 71.382%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 4800, 1), dims = 3
+activation_type = 0
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 68
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 6.86839, dequant_ptr = (nil), bias_ptr = 0x7fba8de8ea80 
+[ log ]: current conv layer id is 46
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 68), op = 0
+[ log ]: conv_time = 112787
+[ log ]: time_dma_ch0_r = 7020, => 6.224%
+[ log ]: time_dma_ch1_r = 6836, => 6.061%
+[ log ]: time_dma_ch0_w = 61200, => 54.262%
+[ log ]: time_dma_ch1_w = 61200, => 54.262%
+[ log ]: time_ifmbuf_load = 7726, => 6.850%
+[ log ]: time_ofmbuf_congest = 90004, => 79.800%
+[ log ]: time_dmasendbuf_congest = 47281, => 41.921%
+
+
+[ log ]: Forward Reshape on CPU, shape = (80, 60, 68, 1), dims = 3
+[ log ]: Forward Permute on CPU, shape = (4800, 17, 4, 1), dims = 3
+[ log ]: Forward Softmax on CPU, shape = (4800, 4, 17, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (4800, 4, 17, 1), dims = 3
+activation_type = 0
+[ log ]: ifm_w = 4800, ifm_h = 4, ifm_c = 17
+[ log ]: ofm_w = 4800, ofm_h = 4, ofm_c = 1
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 0, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 228.73773, dequant_ptr = (nil), bias_ptr = (nil) 
+[ log ]: current conv layer id is 47
+[ log ]: (iw, ih, ic, oc) = (4800, 4, 17, 1), op = 0
+[ log ]: conv_time = 37952
+[ log ]: time_dma_ch0_r = 16602, => 43.745%
+[ log ]: time_dma_ch1_r = 15044, => 39.640%
+[ log ]: time_dma_ch0_w = 528, => 1.391%
+[ log ]: time_dma_ch1_w = 528, => 1.391%
+[ log ]: time_ifmbuf_load = 26328, => 69.372%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Reshape on CPU, shape = (4800, 4, 1, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 32, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 32
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 9.39055, dequant_ptr = (nil), bias_ptr = 0x7fba8ddc9160 
+[ log ]: current conv layer id is 48
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 73182
+[ log ]: time_dma_ch0_r = 51674, => 70.610%
+[ log ]: time_dma_ch1_r = 49796, => 68.044%
+[ log ]: time_dma_ch0_w = 7296, => 9.970%
+[ log ]: time_dma_ch1_w = 7104, => 9.707%
+[ log ]: time_ifmbuf_load = 61772, => 84.409%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 4037, => 5.516%
+
+
+[ log ]: Forward Concat on CPU, shape = (40, 30, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 64, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 14.89897, dequant_ptr = (nil), bias_ptr = 0x7fba8ddd22a0 
+[ log ]: current conv layer id is 49
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 55726
+[ log ]: time_dma_ch0_r = 27892, => 50.052%
+[ log ]: time_dma_ch1_r = 25620, => 45.975%
+[ log ]: time_dma_ch0_w = 4864, => 8.728%
+[ log ]: time_dma_ch1_w = 4736, => 8.499%
+[ log ]: time_ifmbuf_load = 33008, => 59.233%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 11.92364, dequant_ptr = (nil), bias_ptr = 0x7fba8dddb500 
+[ log ]: current conv layer id is 50
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 27703
+[ log ]: time_dma_ch0_r = 4666, => 16.843%
+[ log ]: time_dma_ch1_r = 3562, => 12.858%
+[ log ]: time_dma_ch0_w = 4864, => 17.558%
+[ log ]: time_dma_ch1_w = 4736, => 17.096%
+[ log ]: time_ifmbuf_load = 4985, => 17.994%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 12.38175, dequant_ptr = (nil), bias_ptr = 0x7fba8dde4760 
+[ log ]: current conv layer id is 51
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 27703
+[ log ]: time_dma_ch0_r = 4666, => 16.843%
+[ log ]: time_dma_ch1_r = 3562, => 12.858%
+[ log ]: time_dma_ch0_w = 4864, => 17.558%
+[ log ]: time_dma_ch1_w = 4736, => 17.096%
+[ log ]: time_ifmbuf_load = 4985, => 17.994%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 11.55795, dequant_ptr = (nil), bias_ptr = 0x7fba8dded9c0 
+[ log ]: current conv layer id is 52
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 27627
+[ log ]: time_dma_ch0_r = 4666, => 16.889%
+[ log ]: time_dma_ch1_r = 3562, => 12.893%
+[ log ]: time_dma_ch0_w = 14592, => 52.818%
+[ log ]: time_dma_ch1_w = 14208, => 51.428%
+[ log ]: time_ifmbuf_load = 4985, => 18.044%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Split on CPU, shape = (40, 30, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 64, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 9.47071, dequant_ptr = (nil), bias_ptr = 0x7fba8de90160 
+[ log ]: current conv layer id is 53
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 53090
+[ log ]: time_dma_ch0_r = 25844, => 48.680%
+[ log ]: time_dma_ch1_r = 25620, => 48.258%
+[ log ]: time_dma_ch0_w = 14592, => 27.485%
+[ log ]: time_dma_ch1_w = 14208, => 26.762%
+[ log ]: time_ifmbuf_load = 30960, => 58.316%
+[ log ]: time_ofmbuf_congest = 16695, => 31.447%
+[ log ]: time_dmasendbuf_congest = 12119, => 22.827%
+
+
+[ log ]: Forward Split on CPU, shape = (40, 30, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 64, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 35.15876, dequant_ptr = (nil), bias_ptr = 0x7fba8dea40c0 
+[ log ]: current conv layer id is 54
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 55726
+[ log ]: time_dma_ch0_r = 27892, => 50.052%
+[ log ]: time_dma_ch1_r = 25620, => 45.975%
+[ log ]: time_dma_ch0_w = 4864, => 8.728%
+[ log ]: time_dma_ch1_w = 4736, => 8.499%
+[ log ]: time_ifmbuf_load = 33008, => 59.233%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 0
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 68
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 10.39032, dequant_ptr = (nil), bias_ptr = 0x7fba8dea5b20 
+[ log ]: current conv layer id is 55
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 68), op = 0
+[ log ]: conv_time = 30087
+[ log ]: time_dma_ch0_r = 3324, => 11.048%
+[ log ]: time_dma_ch1_r = 3012, => 10.011%
+[ log ]: time_dma_ch0_w = 15504, => 51.531%
+[ log ]: time_dma_ch1_w = 15096, => 50.174%
+[ log ]: time_ifmbuf_load = 3462, => 11.507%
+[ log ]: time_ofmbuf_congest = 16446, => 54.661%
+[ log ]: time_dmasendbuf_congest = 11821, => 39.289%
+
+
+[ log ]: Forward Reshape on CPU, shape = (40, 30, 68, 1), dims = 3
+[ log ]: Forward Permute on CPU, shape = (1200, 17, 4, 1), dims = 3
+[ log ]: Forward Softmax on CPU, shape = (1200, 4, 17, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (1200, 4, 17, 1), dims = 3
+activation_type = 0
+[ log ]: ifm_w = 1200, ifm_h = 4, ifm_c = 17
+[ log ]: ofm_w = 1200, ofm_h = 4, ofm_c = 1
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 0, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 226.79279, dequant_ptr = (nil), bias_ptr = (nil) 
+[ log ]: current conv layer id is 56
+[ log ]: (iw, ih, ic, oc) = (1200, 4, 17, 1), op = 0
+[ log ]: conv_time = 62542
+[ log ]: time_dma_ch0_r = 27222, => 43.526%
+[ log ]: time_dma_ch1_r = 26443, => 42.280%
+[ log ]: time_dma_ch0_w = 900, => 1.439%
+[ log ]: time_dma_ch1_w = 900, => 1.439%
+[ log ]: time_ifmbuf_load = 43162, => 69.013%
+[ log ]: time_ofmbuf_congest = 14725, => 23.544%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Reshape on CPU, shape = (1200, 4, 1, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 64, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 64
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 9.47071, dequant_ptr = (nil), bias_ptr = 0x7fba8ddf6c00 
+[ log ]: current conv layer id is 57
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 39522
+[ log ]: time_dma_ch0_r = 27892, => 70.573%
+[ log ]: time_dma_ch1_r = 25620, => 64.825%
+[ log ]: time_dma_ch0_w = 3840, => 9.716%
+[ log ]: time_dma_ch1_w = 3392, => 8.583%
+[ log ]: time_ifmbuf_load = 33008, => 83.518%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Concat on CPU, shape = (20, 15, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (20, 15, 128, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 14.34371, dequant_ptr = (nil), bias_ptr = 0x7fba8de1ae40 
+[ log ]: current conv layer id is 58
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 44037
+[ log ]: time_dma_ch0_r = 21416, => 48.632%
+[ log ]: time_dma_ch1_r = 14900, => 33.835%
+[ log ]: time_dma_ch0_w = 2560, => 5.813%
+[ log ]: time_dma_ch1_w = 2240, => 5.087%
+[ log ]: time_ifmbuf_load = 20165, => 45.791%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 13.08693, dequant_ptr = (nil), bias_ptr = 0x7fba8de3f2a0 
+[ log ]: current conv layer id is 59
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 28974
+[ log ]: time_dma_ch0_r = 9602, => 33.140%
+[ log ]: time_dma_ch1_r = 2494, => 8.608%
+[ log ]: time_dma_ch0_w = 2560, => 8.836%
+[ log ]: time_dma_ch1_w = 2240, => 7.731%
+[ log ]: time_ifmbuf_load = 5102, => 17.609%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 13.78090, dequant_ptr = (nil), bias_ptr = 0x7fba8de63700 
+[ log ]: current conv layer id is 60
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 28974
+[ log ]: time_dma_ch0_r = 9602, => 33.140%
+[ log ]: time_dma_ch1_r = 2494, => 8.608%
+[ log ]: time_dma_ch0_w = 2560, => 8.836%
+[ log ]: time_dma_ch1_w = 2240, => 7.731%
+[ log ]: time_ifmbuf_load = 5102, => 17.609%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 1
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 14.77705, dequant_ptr = (nil), bias_ptr = 0x7fba8de87b60 
+[ log ]: current conv layer id is 61
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 28974
+[ log ]: time_dma_ch0_r = 9602, => 33.140%
+[ log ]: time_dma_ch1_r = 2494, => 8.608%
+[ log ]: time_dma_ch0_w = 2560, => 8.836%
+[ log ]: time_dma_ch1_w = 2240, => 7.731%
+[ log ]: time_ifmbuf_load = 5102, => 17.609%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 9.74119, dequant_ptr = (nil), bias_ptr = 0x7fba8deaa200 
+[ log ]: current conv layer id is 62
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 13836
+[ log ]: time_dma_ch0_r = 2378, => 17.187%
+[ log ]: time_dma_ch1_r = 1526, => 11.029%
+[ log ]: time_dma_ch0_w = 7680, => 55.507%
+[ log ]: time_dma_ch1_w = 6784, => 49.032%
+[ log ]: time_ifmbuf_load = 2010, => 14.527%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 6059, => 43.792%
+
+
+[ log ]: Forward Split on CPU, shape = (20, 15, 128, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (20, 15, 128, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 31.55319, dequant_ptr = (nil), bias_ptr = 0x7fba8def5d60 
+[ log ]: current conv layer id is 63
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 44037
+[ log ]: time_dma_ch0_r = 21416, => 48.632%
+[ log ]: time_dma_ch1_r = 14900, => 33.835%
+[ log ]: time_dma_ch0_w = 2560, => 5.813%
+[ log ]: time_dma_ch1_w = 2240, => 5.087%
+[ log ]: time_ifmbuf_load = 20165, => 45.791%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 0
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 68
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 14.20238, dequant_ptr = (nil), bias_ptr = 0x7fba8def91c0 
+[ log ]: current conv layer id is 64
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 68), op = 0
+[ log ]: conv_time = 8388
+[ log ]: time_dma_ch0_r = 2096, => 24.988%
+[ log ]: time_dma_ch1_r = 1496, => 17.835%
+[ log ]: time_dma_ch0_w = 4080, => 48.641%
+[ log ]: time_dma_ch1_w = 3604, => 42.966%
+[ log ]: time_ifmbuf_load = 1980, => 23.605%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 1971, => 23.498%
+
+
+[ log ]: Forward Reshape on CPU, shape = (20, 15, 68, 1), dims = 3
+[ log ]: Forward Permute on CPU, shape = (300, 17, 4, 1), dims = 3
+[ log ]: Forward Softmax on CPU, shape = (300, 4, 17, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (300, 4, 17, 1), dims = 3
+activation_type = 0
+[ log ]: ifm_w = 300, ifm_h = 4, ifm_c = 17
+[ log ]: ofm_w = 300, ofm_h = 4, ofm_c = 1
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 0, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 229.70348, dequant_ptr = (nil), bias_ptr = (nil) 
+[ log ]: current conv layer id is 65
+[ log ]: (iw, ih, ic, oc) = (300, 4, 17, 1), op = 0
+[ log ]: conv_time = 16510
+[ log ]: time_dma_ch0_r = 7230, => 43.792%
+[ log ]: time_dma_ch1_r = 6451, => 39.073%
+[ log ]: time_dma_ch0_w = 228, => 1.381%
+[ log ]: time_dma_ch1_w = 222, => 1.345%
+[ log ]: time_ifmbuf_load = 11466, => 69.449%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Reshape on CPU, shape = (300, 4, 1, 1), dims = 3
+[ log ]: Forward Concat on CPU, shape = (4800, 4, 1, 1), dims = 2
+[ log ]: Forward Permute on CPU, shape = (6300, 4, 1, 1), dims = 2
+[ log ]: Forward MemoryData on CPU
+[ log ]: Forward Convolution on NPU, shape = (80, 60, 32, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 31.70187, dequant_ptr = (nil), bias_ptr = 0x7fba8de8a900 
+[ log ]: current conv layer id is 66
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 32), op = 0
+[ log ]: conv_time = 86537
+[ log ]: time_dma_ch0_r = 51674, => 59.713%
+[ log ]: time_dma_ch1_r = 49796, => 57.543%
+[ log ]: time_dma_ch0_w = 9600, => 11.094%
+[ log ]: time_dma_ch1_w = 9600, => 11.094%
+[ log ]: time_ifmbuf_load = 61772, => 71.382%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 4800, 1), dims = 3
+activation_type = 4
+[ log ]: ifm_w = 80, ifm_h = 60, ifm_c = 32
+[ log ]: ofm_w = 80, ofm_h = 60, ofm_c = 80
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 4, act_alpha = 0.000000
+[ log ]: quant_scale = 21.33717, dequant_ptr = (nil), bias_ptr = 0x7fba8de8b660 
+[ log ]: current conv layer id is 67
+[ log ]: (iw, ih, ic, oc) = (80, 60, 32, 80), op = 0
+[ log ]: conv_time = 116099
+[ log ]: time_dma_ch0_r = 7020, => 6.047%
+[ log ]: time_dma_ch1_r = 6842, => 5.893%
+[ log ]: time_dma_ch0_w = 72000, => 62.016%
+[ log ]: time_dma_ch1_w = 72000, => 62.016%
+[ log ]: time_ifmbuf_load = 7732, => 6.660%
+[ log ]: time_ofmbuf_congest = 91829, => 79.095%
+[ log ]: time_dmasendbuf_congest = 50397, => 43.409%
+
+
+[ log ]: Forward Reshape on CPU, shape = (80, 60, 80, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (40, 30, 64, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 64
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 35.15876, dequant_ptr = (nil), bias_ptr = 0x7fba8de993a0 
+[ log ]: current conv layer id is 68
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 64), op = 0
+[ log ]: conv_time = 55726
+[ log ]: time_dma_ch0_r = 27892, => 50.052%
+[ log ]: time_dma_ch1_r = 25620, => 45.975%
+[ log ]: time_dma_ch0_w = 4864, => 8.728%
+[ log ]: time_dma_ch1_w = 4736, => 8.499%
+[ log ]: time_ifmbuf_load = 33008, => 59.233%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (64, 1, 1200, 1), dims = 3
+activation_type = 4
+[ log ]: ifm_w = 40, ifm_h = 30, ifm_c = 64
+[ log ]: ofm_w = 40, ofm_h = 30, ofm_c = 80
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 4, act_alpha = 0.000000
+[ log ]: quant_scale = 17.22731, dequant_ptr = (nil), bias_ptr = 0x7fba8de9ae00 
+[ log ]: current conv layer id is 69
+[ log ]: (iw, ih, ic, oc) = (40, 30, 64, 80), op = 0
+[ log ]: conv_time = 31070
+[ log ]: time_dma_ch0_r = 3324, => 10.698%
+[ log ]: time_dma_ch1_r = 3018, => 9.714%
+[ log ]: time_dma_ch0_w = 18240, => 58.706%
+[ log ]: time_dma_ch1_w = 17760, => 57.161%
+[ log ]: time_ifmbuf_load = 3468, => 11.162%
+[ log ]: time_ofmbuf_congest = 16694, => 53.730%
+[ log ]: time_dmasendbuf_congest = 12119, => 39.005%
+
+
+[ log ]: Forward Reshape on CPU, shape = (40, 30, 80, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (20, 15, 128, 1), dims = 3
+activation_type = 8
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 128
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 8, act_alpha = 0.000000
+[ log ]: quant_scale = 31.55319, dequant_ptr = (nil), bias_ptr = 0x7fba8dece640 
+[ log ]: current conv layer id is 70
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 128), op = 0
+[ log ]: conv_time = 44037
+[ log ]: time_dma_ch0_r = 21416, => 48.632%
+[ log ]: time_dma_ch1_r = 14900, => 33.835%
+[ log ]: time_dma_ch0_w = 2560, => 5.813%
+[ log ]: time_dma_ch1_w = 2240, => 5.087%
+[ log ]: time_ifmbuf_load = 20165, => 45.791%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 0, => 0.000%
+
+
+[ log ]: Forward Convolution on NPU, shape = (128, 1, 300, 1), dims = 3
+activation_type = 4
+[ log ]: ifm_w = 20, ifm_h = 15, ifm_c = 128
+[ log ]: ofm_w = 20, ofm_h = 15, ofm_c = 80
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 4, act_alpha = 0.000000
+[ log ]: quant_scale = 17.42121, dequant_ptr = (nil), bias_ptr = 0x7fba8ded1aa0 
+[ log ]: current conv layer id is 71
+[ log ]: (iw, ih, ic, oc) = (20, 15, 128, 80), op = 0
+[ log ]: conv_time = 9492
+[ log ]: time_dma_ch0_r = 2096, => 22.082%
+[ log ]: time_dma_ch1_r = 1502, => 15.824%
+[ log ]: time_dma_ch0_w = 4800, => 50.569%
+[ log ]: time_dma_ch1_w = 4240, => 44.669%
+[ log ]: time_ifmbuf_load = 1986, => 20.923%
+[ log ]: time_ofmbuf_congest = 0, => 0.000%
+[ log ]: time_dmasendbuf_congest = 2019, => 21.271%
+
+
+[ log ]: Forward Reshape on CPU, shape = (20, 15, 80, 1), dims = 3
+[ log ]: Forward Concat on CPU, shape = (4800, 80, 1, 1), dims = 2
+[ log ]: Forward Permute on CPU, shape = (6300, 80, 1, 1), dims = 2
+[ log ]: Forward Concat on CPU, shape = (4, 6300, 1, 1), dims = 2
+16 = 0.84149 at 174.29 249.03 135.63 x 290.81
+1 = 0.67201 at 135.69 155.75 414.46 x 265.20
+2 = 0.47449 at 459.01 76.59 215.49 x 95.31
+[ log ]: imshow save image to image.png
+[ log ]: FREQ = 500MHz, CYCLES = 7765448, TIME = 15.530896ms
+[ log ]: POOL_TIME = 0.112968, 0.72738%
+[ log ]: GEMM_TIME = 15.116394, 97.33111%
+[ log ]: simulation time: 22:08.73

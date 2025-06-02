@@ -1,0 +1,87 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Jan  8 16:06:16 2024
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/liang5056/simulation_prj/wave.fst"
+[dumpfile_mtime] "Mon Jan  8 09:10:50 2024"
+[dumpfile_size] 1056635449
+[savefile] "/home/jiexxpu/ncnnAccel/liang5056/simulation_prj/mesh.gtkw"
+[timestart] 203055
+[size] 2486 1262
+[pos] -51 -51
+*-2.780926 203074 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[sst_width] 314
+[signals_width] 383
+[sst_expanded] 1
+[sst_vpaned_height] 774
+@28
+tcp.tcp.mesh.clock
+tcp.tcp.mesh.reset
+@200
+-########Ifmbufctl
+-ifmbufctl
+@28
+tcp.tcp.ifmbufferctl.io_task_done
+tcp.tcp.ifmbufferctl.io_ifm_valid
+tcp.tcp.ifmbufferctl.io_ifm_ready
+@200
+-########MESH
+-io
+@28
+tcp.tcp.mesh.io_ofmbuf_stop
+tcp.tcp.mesh.io_w_finish
+tcp.tcp.mesh.io_last_in
+@200
+-state
+@28
+tcp.tcp.mesh.state[2:0]
+tcp.tcp.mesh.en
+@22
+tcp.tcp.mesh.cnt[4:0]
+@200
+-ifm
+@28
+tcp.tcp.mesh.io_ifm_valid
+tcp.tcp.mesh.io_ifm_ready
+@200
+-w
+@28
+tcp.tcp.mesh.io_w_valid
+tcp.tcp.mesh.io_w_ready
+tcp.tcp.mesh.w_block
+@200
+-ofm
+@28
+tcp.tcp.mesh.io_ofm_0_bits_acc_last
+@22
+tcp.tcp.mesh.io_ofm_0_bits_addr[4:0]
+tcp.tcp.mesh.io_ofm_0_bits_data0[28:0]
+tcp.tcp.mesh.io_ofm_0_bits_data1[28:0]
+@28
+tcp.tcp.mesh.io_ofm_0_bits_finish
+tcp.tcp.mesh.io_ofm_0_valid
+tcp.tcp.mesh.io_ofm_2_bits_acc_last
+@22
+tcp.tcp.mesh.io_ofm_2_bits_addr[4:0]
+tcp.tcp.mesh.io_ofm_2_bits_data0[28:0]
+tcp.tcp.mesh.io_ofm_2_bits_data1[28:0]
+@28
+tcp.tcp.mesh.io_ofm_2_bits_finish
+tcp.tcp.mesh.io_ofm_2_valid
+@200
+-########ACCMEM
+@22
+tcp.tcp.accmem.acc_mem_2_io_out_bits_data0[28:0]
+tcp.tcp.accmem.acc_mem_2_io_out_bits_data1[28:0]
+@28
+tcp.tcp.accmem.acc_mem_2_io_out_valid
+@200
+-########OfmBuf
+@201
+-#####OscaleBias
+@200
+-#######Opfusion
+[pattern_trace] 1
+[pattern_trace] 0

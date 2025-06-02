@@ -1,0 +1,89 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Nov  2 12:56:02 2023
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/work/simulation/wave.vcd"
+[dumpfile_mtime] "Thu Nov  2 12:46:26 2023"
+[dumpfile_size] 10971520
+[savefile] "/home/jiexxpu/ncnnAccel/work/simulation/im2col_ifm32.sav"
+[timestart] 2934
+[size] 1920 1043
+[pos] -1 -1
+*-1.470087 2940 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.ifmbuffer.
+[treeopen] tcp.tcp.ifmbuffer.DPRAM.
+[treeopen] tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.
+[treeopen] tcp.tcp.ifmbuffer.int8_ifm_unit.
+[sst_width] 313
+[signals_width] 368
+[sst_expanded] 1
+[sst_vpaned_height] 557
+@28
+tcp.tcp.ifmbuffer.clock
+tcp.tcp.ifmbuffer.io_task_done
+@22
+tcp.tcp.ifmbuffer.io_dma_data_data[127:0]
+@200
+-int8_ifm_unit
+@22
+tcp.tcp.ifmbuffer.int8_ifm_unit.io_dma_data_data[127:0]
+@28
+tcp.tcp.ifmbuffer.int8_ifm_unit.io_dma_data_valid
+@c00022
+tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+@28
+(0)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(1)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(2)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(3)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(4)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(5)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(6)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(7)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(8)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(9)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(10)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(11)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(12)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(13)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(14)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+(15)tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_waddr[15:0]
+@1401200
+-group_end
+@22
+tcp.tcp.ifmbuffer.int8_ifm_unit.ifm_waddr[15:0]
+tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_wdata[255:0]
+@28
+tcp.tcp.ifmbuffer.int8_ifm_unit.io_ifm_w_port_wen
+@200
+-dpram
+@22
+tcp.tcp.ifmbuffer.DPRAM.io_addr_a[15:0]
+@28
+tcp.tcp.ifmbuffer.DPRAM.io_en_a
+tcp.tcp.ifmbuffer.DPRAM.io_wr_a
+@22
+tcp.tcp.ifmbuffer.DPRAM.io_wdata_a[255:0]
+tcp.tcp.ifmbuffer.DPRAM.sel_a_ram_512k[4:0]
+tcp.tcp.ifmbuffer.DPRAM.io_rdata_a[255:0]
+tcp.tcp.ifmbuffer.DPRAM.io_rdata_b[255:0]
+tcp.tcp.io_ifm_mem_read_port0_rdata[255:0]
+@200
+-512K_0
+@22
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.io_wdata_a[255:0]
+@28
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.io_wr_a
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.io_en_a
+@22
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.DPRAM_256K_wdata_a[127:0]
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.DPRAM_256K_1_wdata_a[127:0]
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.DPRAM_256K_1_wdata_b[127:0]
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.DPRAM_256K_wdata_b[127:0]
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.DPRAM_256K.wdata_a[127:0]
+@23
+tcp.tcp.ifmbuffer.DPRAM.DPRAM_512K.DPRAM_256K_1.wdata_a[127:0]
+[pattern_trace] 1
+[pattern_trace] 0

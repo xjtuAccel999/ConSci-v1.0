@@ -1,0 +1,105 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sat Apr  8 08:25:59 2023
+[*]
+[dumpfile] "/home/qin/ncnnAccel/simulation/wave.vcd"
+[dumpfile_mtime] "Sat Apr  8 08:25:47 2023"
+[dumpfile_size] 120040262
+[savefile] "/home/qin/ncnnAccel/simulation/im2col_mat32.sav"
+[timestart] 0
+[size] 1920 1043
+[pos] -1 -1
+*-15.000000 32790 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.im2col.
+[treeopen] tcp.tcp.im2col.int8_ifm_and_mat32_unit.
+[sst_width] 327
+[signals_width] 387
+[sst_expanded] 1
+[sst_vpaned_height] 415
+@28
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.clock
+>-1
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_clr
+>0
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_start
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_mode[1:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.en
+@24
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_size_mat32[15:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_whc_w[15:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_whc_c[15:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_burst_num[15:0]
+@22
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rareq_dmaAddr[63:0]
+@24
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rid[1:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rareq_dmaSize[31:0]
+@28
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rbusy
+[color] 2
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rareq_dmaAreq
+[color] 1
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rareq_dmaEn
+@22
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_burst_num[15:0]
+@23
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_burst_num_cnt[15:0]
+@22
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rdata_data[127:0]
+@28
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_dma_rdata_valid
+@22
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_ifm_dma_addr[63:0]
+@28
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_rareq_down_inst_io_edge
+@22
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_addr[63:0]
+@24
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_cstep[31:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.cstep[31:0]
+@28
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.start_t2
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_task_done
+@24
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_burst_num[15:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_burst_num_cnt[15:0]
+@28
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.dma_rbusy_down_inst_io_edge
+@22
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_ifm_w_port_waddr[15:0]
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_ifm_w_port_wdata[255:0]
+@28
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.io_ifm_w_port_wen
+tcp.tcp.im2col.int8_ifm_and_mat32_unit.ifm_wcnt
+@22
+[color] 2
+tcp.tcp.im2col.DPRAM.addr_a[15:0]
+[color] 2
+tcp.tcp.im2col.DPRAM.addr_b[15:0]
+@28
+[color] 2
+tcp.tcp.im2col.DPRAM.clock
+[color] 2
+tcp.tcp.im2col.DPRAM.en_a
+[color] 2
+tcp.tcp.im2col.DPRAM.en_b
+@22
+[color] 2
+tcp.tcp.im2col.DPRAM.rdata_a[255:0]
+[color] 2
+tcp.tcp.im2col.DPRAM.rdata_b[255:0]
+[color] 2
+tcp.tcp.im2col.DPRAM.wdata_a[255:0]
+[color] 2
+tcp.tcp.im2col.DPRAM.wdata_b[255:0]
+@28
+[color] 2
+tcp.tcp.im2col.DPRAM.wr_a
+[color] 2
+tcp.tcp.im2col.DPRAM.wr_b
+tcp.tcp.im2col.io_im2col_en
+tcp.tcp.im2col.io_task_done
+[pattern_trace] 1
+[pattern_trace] 0

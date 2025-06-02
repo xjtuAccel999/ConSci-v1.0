@@ -1,0 +1,76 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Nov 15 18:22:38 2023
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/work/simulation/wave.vcd"
+[dumpfile_mtime] "Wed Nov 15 18:04:49 2023"
+[dumpfile_size] 106707008
+[savefile] "/home/jiexxpu/ncnnAccel/work/simulation/debug.sav"
+[timestart] 6041
+[size] 1920 1043
+[pos] -1 -1
+*-3.002288 6050 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.opfusion.
+[sst_width] 406
+[signals_width] 342
+[sst_expanded] 1
+[sst_vpaned_height] 298
+@28
+tcp.tcp.wgtBuf.clock
+@29
+tcp.tcp.io_gemm_task_done
+@200
+-mesh
+@28
+tcp.tcp.mesh.io_ifm_valid
+tcp.tcp.mesh.io_w_valid
+@22
+tcp.tcp.mesh.io_w_bits_0[31:0]
+@28
+tcp.tcp.mesh.io_ofm_0_valid
+@22
+tcp.tcp.mesh.io_ofm_0_bits_data0[31:0]
+tcp.tcp.mesh.io_ofm_0_bits_addr[4:0]
+@200
+-accmem
+@28
+tcp.tcp.accmem.io_out_0_valid
+@22
+tcp.tcp.accmem.io_out_0_bits_data0[31:0]
+@200
+-ofmbuf
+@28
+tcp.tcp.ofmBuf.io_o_data_ch0_valid
+@22
+tcp.tcp.ofmBuf.io_o_data_ch0_data_0[31:0]
+@28
+tcp.tcp.ofmBuf.io_dmaSend_congested
+@200
+-ofmbuf0_0
+@28
+tcp.tcp.ofmBuf.buffer0_0.cnt[1:0]
+tcp.tcp.ofmBuf.buffer0_0.io_i_data_valid
+@22
+tcp.tcp.ofmBuf.buffer0_0.io_i_data_bits[31:0]
+tcp.tcp.ofmBuf.buffer0_0.data_t[127:0]
+@28
+tcp.tcp.ofmBuf.buffer0_0.fifo_io_deq_ready
+tcp.tcp.ofmBuf.buffer0_0.fifo_io_deq_valid
+tcp.tcp.ofmBuf.buffer0_0.io_o_data_valid
+@22
+tcp.tcp.ofmBuf.cnt[7:0]
+@28
+tcp.tcp.ofmBuf.fifo_valid_0
+@200
+-opfusion
+@28
+tcp.tcp.opfusion.io_gemm_task_done
+tcp.tcp.opfusion.cell0_io_gemm_task_done
+tcp.tcp.opfusion.cell0.nchw_ctrl_io_en
+tcp.tcp.opfusion.cell0.nchw_ctrl_io_task_done
+tcp.tcp.opfusion.cell0.nhwc_ctrl_io_en
+tcp.tcp.opfusion.cell0.nhwc_ctrl_io_task_done
+[pattern_trace] 1
+[pattern_trace] 0

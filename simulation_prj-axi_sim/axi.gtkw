@@ -1,0 +1,119 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Thu Jan 25 09:00:16 2024
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/liang5056/simulation_prj/wave.vcd"
+[dumpfile_mtime] "Thu Jan 25 08:58:45 2024"
+[dumpfile_size] 1827394809
+[savefile] "/home/jiexxpu/ncnnAccel/liang5056/simulation_prj/axi.gtkw"
+[timestart] 0
+[size] 1920 1043
+[pos] -1 -1
+*-12.294223 6020 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.wgtBuf.
+[sst_width] 460
+[signals_width] 446
+[sst_expanded] 1
+[sst_vpaned_height] 298
+@28
+tcp.tcp.wgtBuf.clock
+@200
+-wgt_8bit_axi
+@28
+tcp.tcp.wgtBuf.wgt_8bit_axi.start_one_task_keep
+tcp.tcp.wgtBuf.wgt_8bit_axi.axi_areq
+tcp.tcp.wgtBuf.wgt_8bit_axi.io_start_one_task
+@200
+-wgt_buf
+@22
+tcp.tcp.wgtBuf.io_axi_ch0_areq_axiAddr[63:0]
+@28
+tcp.tcp.wgtBuf.io_axi_ch0_areq_axiAreq
+tcp.tcp.wgtBuf.io_axi_ch0_areq_axiEn
+@24
+tcp.tcp.wgtBuf.io_axi_ch0_areq_axiSize[31:0]
+@22
+tcp.tcp.wgtBuf.io_axi_ch0_data_data[127:0]
+@28
+tcp.tcp.wgtBuf.io_axi_ch0_data_last
+tcp.tcp.wgtBuf.io_axi_ch0_data_valid
+tcp.tcp.wgtBuf.io_axi_ch0_id[2:0]
+@200
+-
+@22
+tcp.tcp.wgtBuf.io_axi_ch1_areq_axiAddr[63:0]
+@28
+tcp.tcp.wgtBuf.io_axi_ch1_areq_axiAreq
+tcp.tcp.wgtBuf.io_axi_ch1_areq_axiEn
+@24
+tcp.tcp.wgtBuf.io_axi_ch1_areq_axiSize[31:0]
+@22
+tcp.tcp.wgtBuf.io_axi_ch1_data_data[127:0]
+@28
+tcp.tcp.wgtBuf.io_axi_ch1_data_last
+tcp.tcp.wgtBuf.io_axi_ch1_data_valid
+tcp.tcp.wgtBuf.io_axi_ch1_id[2:0]
+@200
+-
+@22
+tcp.tcp.wgtBuf.io_o_data_bits_0[31:0]
+@25
+tcp.tcp.wgtBuf.k2ic_align[17:0]
+@28
+tcp.tcp.wgtBuf.half_wgt_enough
+@22
+tcp.tcp.wgtBuf.wgt_baseaddr[63:0]
+tcp.tcp.wgtBuf.wgt_baseaddr1[63:0]
+@24
+tcp.tcp.wgtBuf.wgt_8bit_axi_1_io_burst_size[12:0]
+@200
+-io
+@22
+tcp.tcp.io_axi_ch1_r_m_araddr[63:0]
+tcp.tcp.io_axi_ch1_r_m_arlen[7:0]
+@28
+tcp.tcp.io_axi_ch1_r_m_arready
+[color] 2
+tcp.tcp.io_axi_ch1_r_m_arvalid
+@22
+tcp.tcp.io_axi_ch1_r_m_rdata[127:0]
+@28
+tcp.tcp.io_axi_ch1_r_m_rlast
+tcp.tcp.io_axi_ch1_r_m_rready
+tcp.tcp.io_axi_ch1_r_m_rvalid
+@200
+-
+@22
+tcp.tcp.io_axi_ch0_r_m_araddr[63:0]
+@28
+tcp.tcp.io_axi_ch0_r_m_arburst[1:0]
+@24
+tcp.tcp.io_axi_ch0_r_m_arlen[7:0]
+@28
+tcp.tcp.io_axi_ch0_r_m_arready
+[color] 2
+tcp.tcp.io_axi_ch0_r_m_arvalid
+@22
+tcp.tcp.io_axi_ch0_r_m_rdata[127:0]
+@28
+tcp.tcp.io_axi_ch0_r_m_rlast
+tcp.tcp.io_axi_ch0_r_m_rready
+tcp.tcp.io_axi_ch0_r_m_rvalid
+@200
+-axi_r_ctrl
+@28
+tcp.tcp.axi_ch0_ctrl.clock
+tcp.tcp.axi_ch0_ctrl.io_dma_areq
+@22
+tcp.tcp.axi_ch0_ctrl.io_dma_addr[63:0]
+tcp.tcp.axi_ch0_ctrl.io_dma_data[127:0]
+@28
+tcp.tcp.axi_ch0_ctrl.io_dma_last
+@22
+tcp.tcp.axi_ch0_ctrl.io_dma_size[31:0]
+@28
+tcp.tcp.axi_ch0_ctrl.io_dma_valid
+[pattern_trace] 1
+[pattern_trace] 0

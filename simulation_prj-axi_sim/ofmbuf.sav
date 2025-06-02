@@ -1,0 +1,190 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May  1 17:44:11 2023
+[*]
+[dumpfile] "/home/qin/ncnnAccel/simulation/wave.vcd"
+[dumpfile_mtime] "Mon May  1 17:42:47 2023"
+[dumpfile_size] 220511866
+[savefile] "/home/qin/ncnnAccel/simulation/ofmbuf.sav"
+[timestart] 0
+[size] 1920 964
+[pos] -1 -1
+*-10.894040 2127 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.ofmBuf.
+[treeopen] tcp.tcp.ofmBuf.ofmbuf_cell0.
+[sst_width] 337
+[signals_width] 548
+[sst_expanded] 1
+[sst_vpaned_height] 271
+@200
+-ofmbuf cell0 data fifo in
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.r_valid
+tcp.tcp.ofmBuf.ofmbuf_cell0.r_sel[4:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.fifo_in_ofm_c_high_cnt[6:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.fifo_in_ofm_c_low_cnt[4:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.fifo_in_ofm_c_cnt[11:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.fifo_in_ofm_wh_cnt_equal
+tcp.tcp.ofmBuf.ofmbuf_cell0.fifo_in_ofm_c_low_cnt_equal
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_ofm_wh[23:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.oc_valid
+tcp.tcp.ofmBuf.ofmbuf_cell0.owh_valid
+@22
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell0.data_fifo_io_enq_bits[1023:0]
+@24
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell0.data_fifo_io_count[10:0]
+@28
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell0.data_fifo_io_enq_valid
+tcp.tcp.ofmBuf.ofmbuf_cell0.data_fifo_io_enq_ready
+@200
+-ofmbuf cell1 data fifo in
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell1.r_valid
+tcp.tcp.ofmBuf.ofmbuf_cell1.oc_valid
+tcp.tcp.ofmBuf.ofmbuf_cell1.owh_valid
+@22
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell1.data_fifo_io_enq_bits[1023:0]
+@28
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell1.data_fifo_io_enq_valid
+tcp.tcp.ofmBuf.ofmbuf_cell1.data_fifo_io_enq_ready
+@200
+-ofmbuf cell0 addr fifo in
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.fifo_in_ofm_wh_cnt[23:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.dma_addr_offset_t[61:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.dma_addr_offset[63:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_ofm_dma_addr[63:0]
+@22
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_addr[63:0]
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell0.addr_fifo_io_enq_bits[63:0]
+@28
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell0.addr_fifo_io_enq_valid
+tcp.tcp.ofmBuf.ofmbuf_cell0.addr_fifo_io_enq_ready
+@200
+-ofmbuf cell1 addr fifo in
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell1.fifo_in_ofm_wh_cnt[23:0]
+tcp.tcp.ofmBuf.ofmbuf_cell1.dma_addr_offset_t[61:0]
+tcp.tcp.ofmBuf.ofmbuf_cell1.dma_addr_offset[63:0]
+@22
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell1.addr_fifo_io_enq_bits[63:0]
+@28
+[color] 1
+tcp.tcp.ofmBuf.ofmbuf_cell1.addr_fifo_io_enq_valid
+tcp.tcp.ofmBuf.ofmbuf_cell1.addr_fifo_io_enq_ready
+@200
+-ofmbuf cell0 fifo out
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.clock
+@22
+tcp.tcp.ofmBuf.ofmbuf_cell0.data_fifo_io_deq_bits[1023:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.data_fifo_io_deq_ready
+@22
+tcp.tcp.ofmBuf.ofmbuf_cell0.addr_fifo_io_deq_bits[63:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.addr_fifo_io_deq_ready
+tcp.tcp.ofmBuf.ofmbuf_cell0.fifo_not_empty
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_dma_wid[1:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_dma_wareq_dmaEn
+@22
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_dma_wareq_dmaAddr[63:0]
+@28
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_dma_wareq_dmaAreq
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_dma_wbusy
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.dma_size[31:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_wh_cnt[23:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_wh_rest[23:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_low_equal
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_low_cnt[4:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_cnt[11:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.dma_sel[2:0]
+@22
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_dma_wdata_data[127:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_dma_wdata_valid
+tcp.tcp.ofmBuf.ofmbuf_cell0.dma_wbusy_fall_edge_inst_io_edge
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.data_fifo_io_count[10:0]
+@29
+tcp.tcp.ofmBuf.ofmbuf_cell0.load_finish
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_wh_cnt_equal
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_equal
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_low_equal
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_cnt[11:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.task_done
+@200
+-dma_ch1
+@22
+tcp.tcp.ofmBuf.ofmbuf_cell1.data_fifo_io_deq_bits[1023:0]
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_dma_wareq_dmaAddr[63:0]
+@28
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_dma_wareq_dmaAreq
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_dma_wareq_dmaEn
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_dma_wbusy
+@24
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell1.dma_sel[2:0]
+tcp.tcp.ofmBuf.ofmbuf_cell1.dma_size[31:0]
+@22
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_dma_wdata_data[127:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_dma_wdata_valid
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_dma_wid[1:0]
+@22
+tcp.tcp.ofmBuf.ofmbuf_cell1.io_ofm_dma_addr[63:0]
+@200
+-dma size
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_ofm_wh[23:0]
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.io_start
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_wh_cnt[23:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_wh_rest[23:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.dma_size[31:0]
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell1.ofm_wh_cnt[23:0]
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell1.ofm_wh_rest[23:0]
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell1.dma_size[31:0]
+@200
+-signal done
+@24
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_cnt[11:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_high_cnt[6:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_low_cnt[4:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_c_low_equal
+[color] 2
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_wh_cnt[23:0]
+tcp.tcp.ofmBuf.ofmbuf_cell0.ofm_wh_cnt_equal
+@28
+tcp.tcp.ofmBuf.ofmbuf_cell0.load_finish
+tcp.tcp.ofmBuf.ofmbuf_cell0.task_done
+tcp.tcp.ofmBuf.ofmbuf_cell1.task_done
+tcp.tcp.ofmBuf.task_done
+[pattern_trace] 1
+[pattern_trace] 0

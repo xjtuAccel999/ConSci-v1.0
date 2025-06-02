@@ -1,0 +1,106 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Dec 11 05:57:22 2023
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/liang4056/simulation/wave.vcd"
+[dumpfile_mtime] "Mon Dec 11 03:25:55 2023"
+[dumpfile_size] 415243424
+[savefile] "/home/jiexxpu/ncnnAccel/liang4056/simulation/ifmbufctl.sav"
+[timestart] 0
+[size] 2488 1376
+[pos] -101 -101
+*-10.621263 27304 27306 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.ifmbufferctl.
+[sst_width] 355
+[signals_width] 812
+[sst_expanded] 1
+[sst_vpaned_height] 287
+@28
+tcp.tcp.ifmbufferctl.clock
+@200
+-in
+@22
+tcp.tcp.ifmbufferctl.io_ifm_read_port0_rdata[255:0]
+@200
+-out
+@28
+tcp.tcp.ifmbufferctl.io_ifm_valid
+tcp.tcp.ifmbufferctl.io_ifm_ready
+@22
+[color] 2
+tcp.tcp.ifmbufferctl.io_ifm_bits_0[31:0]
+[color] 2
+tcp.tcp.ifmbufferctl.io_ifm_bits_1[31:0]
+[color] 2
+tcp.tcp.ifmbufferctl.io_ifm_bits_2[31:0]
+[color] 2
+tcp.tcp.ifmbufferctl.io_ifm_bits_31[31:0]
+tcp.tcp.ifmbufferctl.ifm_buffer_addr0[37:0]
+@c00022
+tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+@28
+(0)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(1)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(2)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(3)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(4)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(5)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(6)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(7)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(8)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(9)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(10)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(11)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(12)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(13)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(14)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(15)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(16)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(17)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(18)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(19)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(20)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(21)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(22)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(23)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(24)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(25)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(26)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(27)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(28)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(29)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(30)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(31)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(32)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(33)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(34)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(35)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(36)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+(37)tcp.tcp.ifmbufferctl.ifm_buffer_addr1[37:0]
+@1401200
+-group_end
+@22
+tcp.tcp.ifmbufferctl.io_ifm_read_port0_rdata[255:0]
+tcp.tcp.ifmbufferctl.io_ifm_read_port1_rdata[255:0]
+@200
+-addr0_gen
+@24
+tcp.tcp.ifmbufferctl.ow_cnt0[11:0]
+tcp.tcp.ifmbufferctl.oh_cnt0[11:0]
+tcp.tcp.ifmbufferctl.iw_pd_cnt0[14:0]
+tcp.tcp.ifmbufferctl.ih_pd_cnt0[14:0]
+tcp.tcp.ifmbufferctl.iw_cnt0[14:0]
+tcp.tcp.ifmbufferctl.ih_cnt0[14:0]
+@22
+tcp.tcp.ifmbufferctl.ifm_buffer_addr_base0_p[30:0]
+tcp.tcp.ifmbufferctl.ifm_buffer_addr0[37:0]
+@28
+tcp.tcp.ifmbufferctl.read_zero_0
+@200
+-addr1_gen
+@28
+tcp.tcp.ifmbufferctl.read_zero_1
+[pattern_trace] 1
+[pattern_trace] 0

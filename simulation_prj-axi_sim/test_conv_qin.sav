@@ -1,0 +1,69 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May 15 15:01:34 2023
+[*]
+[dumpfile] "/home/qin/ncnnAccel/simulation/wave.vcd"
+[dumpfile_mtime] "Mon May 15 14:59:21 2023"
+[dumpfile_size] 5596078903
+[savefile] "/home/qin/ncnnAccel/simulation/test_conv_qin.sav"
+[timestart] 3901070
+[size] 1920 1016
+[pos] -1 -1
+*-1.500898 3901077 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.wgtBuf.
+[sst_width] 410
+[signals_width] 310
+[sst_expanded] 1
+[sst_vpaned_height] 282
+@200
+-opfusion
+@28
+tcp.io_gemm_task_done
+@200
+-im2col
+-wgtbuf
+@28
+tcp.tcp.wgtBuf.io_wgt_en
+@22
+tcp.tcp.wgtBuf.io_dma_rareq_dmaAddr[63:0]
+@28
+tcp.tcp.wgtBuf.io_dma_rareq_dmaAreq
+tcp.tcp.wgtBuf.io_dma_rareq_dmaEn
+@22
+tcp.tcp.wgtBuf.io_dma_rareq_dmaSize[31:0]
+@28
+tcp.tcp.wgtBuf.io_dma_rbusy
+@22
+tcp.tcp.wgtBuf.io_dma_rdata_data[127:0]
+@28
+tcp.tcp.wgtBuf.io_dma_rdata_valid
+@24
+tcp.tcp.wgtBuf.io_dma_rid[2:0]
+@28
+[color] 1
+tcp.tcp.wgtBuf.io_finish
+tcp.tcp.wgtBuf.io_o_data_valid
+tcp.tcp.wgtBuf.io_o_data_ready
+@22
+[color] 1
+tcp.tcp.wgtBuf.io_o_data_bits_0[31:0]
+@24
+tcp.tcp.wgtBuf.TPRAM.raddr[14:0]
+tcp.tcp.wgtBuf.TPRAM.rdata[255:0]
+@23
+tcp.tcp.wgtBuf.io_o_data_bits_31[31:0]
+@28
+tcp.tcp.wgtBuf.TPRAM.wen
+@24
+tcp.tcp.wgtBuf.TPRAM.ren
+@28
+[color] 1
+tcp.tcp.wgtBuf.wgt_buffer0_r_valid
+[color] 1
+tcp.tcp.wgtBuf.wgt_buffer1_r_valid
+[color] 2
+tcp.tcp.wgtBuf.wgt_buffer_sel
+[pattern_trace] 1
+[pattern_trace] 0

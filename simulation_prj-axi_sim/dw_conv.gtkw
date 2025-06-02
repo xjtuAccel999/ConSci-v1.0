@@ -1,0 +1,179 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Dec  2 10:52:50 2023
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/liang4056/simulation/wave.fst"
+[dumpfile_mtime] "Sat Dec  2 10:35:36 2023"
+[dumpfile_size] 456295708
+[savefile] "/home/jiexxpu/ncnnAccel/liang4056/simulation/dw_conv.gtkw"
+[timestart] 132434
+[size] 2486 1234
+[pos] -1 -1
+*-2.505767 132450 86924 70744 70680 85904 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.accmem.acc_mem_31.
+[treeopen] tcp.tcp.ifmbuffer.
+[treeopen] tcp.tcp.opfusion.
+[treeopen] tcp.tcp.opfusion.cell0.
+[sst_width] 381
+[signals_width] 402
+[sst_expanded] 1
+[sst_vpaned_height] 297
+@28
+tcp.tcp.clock
+@200
+-ifm
+@28
+tcp.tcp.ifmbuffer.io_task_done
+tcp.tcp.ifmbuffer.io_dma_busy
+tcp.tcp.ifmbuffer.io_dma_areq_dmaEn
+tcp.tcp.ifmbuffer.io_dma_areq_dmaAreq
+@200
+-int8_ifm_unit
+@28
+tcp.tcp.ifmbuffer.int8_ifm_unit.state[1:0]
+tcp.tcp.ifmbuffer.int8_ifm_unit.dma_en
+tcp.tcp.ifmbuffer.int8_ifm_unit_io_task_done
+@200
+-fp32_ifm_unit
+@28
+tcp.tcp.ifmbuffer.fp32_ifm_unit.io_task_done
+tcp.tcp.ifmbuffer.fp32_ifm_unit.io_cfg_gemm_layout_en
+@22
+tcp.tcp.ifmbuffer.fp32_ifm_unit.ifm_wdata[255:0]
+@24
+tcp.tcp.ifmbuffer.fp32_ifm_unit.ifm_mem_wh[31:0]
+tcp.tcp.ifmbuffer.fp32_ifm_unit.ifm_wh[31:0]
+tcp.tcp.ifmbuffer.fp32_ifm_unit.dma_wh_cnt[31:0]
+tcp.tcp.ifmbuffer.fp32_ifm_unit.dma_c_cnt[15:0]
+@28
+tcp.tcp.ifmbuffer.fp32_ifm_unit.dma_c_cnt_equal
+@200
+-wgt
+@28
+tcp.tcp.wgtBuf.io_wgt_en
+tcp.tcp.wgtBuf.wgt_buffer0_r_valid
+tcp.tcp.wgtBuf.wgt_buffer0_full
+tcp.tcp.wgtBuf.wgt_one_output_done
+tcp.tcp.wgtBuf.io_o_data_valid
+tcp.tcp.wgtBuf.io_o_data_ready
+@22
+tcp.tcp.wgtBuf.wgtbuf_dwconv_fixed_cnt[4:0]
+@24
+tcp.tcp.wgtBuf.wgtbuf_dwconv_owh_idx[17:0]
+@28
+tcp.tcp.wgtBuf.wgtbuf_dwconv_owh_equal
+@22
+tcp.tcp.wgtBuf.wgtbuf_dwconv_icblock_idx[5:0]
+@28
+tcp.tcp.wgtBuf.wgtbuf_dwconv_icblock_equal
+tcp.tcp.wgtBuf.io_o_data_valid
+tcp.tcp.wgtBuf.io_o_data_ready
+@22
+tcp.tcp.wgtBuf.io_o_data_bits_0[31:0]
+@200
+-dma
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_dma_rareq_dmaEn
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_dma_rareq_dmaAreq
+@22
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_dma_rareq_dmaAddr[63:0]
+@24
+tcp.tcp.wgtBuf.io_dma_rareq_dmaSize[31:0]
+@28
+tcp.tcp.wgtBuf.io_dma_rdata_valid
+@22
+tcp.tcp.wgtBuf.io_dma_rdata_data[127:0]
+@200
+-wgt_write
+-ifmctl
+@22
+tcp.tcp.ifmbufferctl.io_ifm_bits_0[31:0]
+@28
+tcp.tcp.ifmbufferctl.io_ifm_valid
+tcp.tcp.ifmbufferctl.io_ifm_ready
+@200
+-mesh
+@28
+tcp.tcp.mesh.io_ifm_valid
+tcp.tcp.mesh.io_ifm_ready
+@22
+tcp.tcp.mesh.io_ifm_bits_0[31:0]
+@28
+tcp.tcp.mesh.io_w_valid
+@29
+tcp.tcp.mesh.io_w_ready
+@22
+tcp.tcp.mesh.io_w_bits_0[31:0]
+@28
+tcp.tcp.mesh.io_ofm_0_valid
+@22
+[color] 3
+tcp.tcp.mesh.io_ofm_0_bits_data0[31:0]
+[color] 3
+tcp.tcp.mesh.io_ofm_0_bits_addr[4:0]
+@28
+tcp.tcp.mesh.io_ofm_0_valid
+tcp.tcp.mesh.io_ofm_0_bits_acc_last
+[color] 2
+tcp.tcp.mesh.io_ofmbuf_stop
+@22
+tcp.tcp.mesh.cnt[4:0]
+@28
+tcp.tcp.mesh.en
+tcp.tcp.mesh.io_ofmbuf_stop
+@200
+-accmem
+@28
+tcp.tcp.accmem.io_ofmbuf_stop
+tcp.tcp.accmem.acc_mem_0_io_ofmbuf_stop
+tcp.tcp.accmem.io_ofm_0_valid
+@22
+[color] 2
+tcp.tcp.accmem.io_ofm_0_bits_data0[31:0]
+@24
+tcp.tcp.accmem.acc_mem_31.io_ofm_bits_addr[4:0]
+@28
+[color] 7
+tcp.tcp.accmem.io_out_0_valid
+@22
+[color] 7
+tcp.tcp.accmem.io_out_0_bits_data0[31:0]
+@28
+tcp.tcp.accmem.acc_mem_0.en
+tcp.tcp.accmem.acc_mem_0.io_ofmbuf_stop
+tcp.tcp.accmem.acc_mem_0.io_ofm_valid
+tcp.tcp.accmem.acc_mem_0.ofm_in_stage
+@200
+-ofmbuf
+@22
+tcp.tcp.ofmBuf.io_o_data_ch0_data_0[31:0]
+@28
+tcp.tcp.ofmBuf.io_o_data_ch0_valid
+@22
+[color] 2
+tcp.tcp.ofmBuf.io_o_data_ch0_data_3[31:0]
+@200
+-scalebias
+-alu
+-opfusion
+@28
+tcp.tcp.opfusion.io_gemm_task_done
+@200
+-nchw
+@28
+tcp.tcp.opfusion.cell0.nchw_ctrl.task_done
+tcp.tcp.opfusion.cell0.nchw_ctrl.io_i_data_valid
+@24
+tcp.tcp.opfusion.cell0.nchw_ctrl.owh_offset[2:0]
+tcp.tcp.opfusion.cell0.nchw_ctrl.oc_offset[4:0]
+tcp.tcp.opfusion.cell0.nchw_ctrl.owh_base[25:0]
+tcp.tcp.opfusion.cell0.nchw_ctrl.owh_align64_div64[25:0]
+@22
+tcp.tcp.opfusion.cell0.nchw_ctrl.oc_base[6:0]
+tcp.tcp.opfusion.cell0.nchw_ctrl.oc_align32_div32[6:0]
+@200
+-dmasender
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,143 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Fri May  5 12:50:47 2023
+[*]
+[dumpfile] "/home/qin/ncnnAccel/simulation/wave.vcd"
+[dumpfile_mtime] "Fri May  5 12:50:13 2023"
+[dumpfile_size] 101633517
+[savefile] "/home/qin/ncnnAccel/simulation/opfusion_ofmbuf.sav"
+[timestart] 0
+[size] 1920 1016
+[pos] -1 -1
+*-12.000000 193 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.opfusion.
+[sst_width] 295
+[signals_width] 491
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@200
+-opfusion dma
+@22
+tcp.tcp.opfusion.io_dma_rareq_dmaAddr[63:0]
+@28
+tcp.tcp.opfusion.io_dma_rareq_dmaAreq
+tcp.tcp.opfusion.io_dma_rareq_dmaEn
+@24
+tcp.tcp.opfusion.io_dma_rareq_dmaSize[31:0]
+@28
+tcp.tcp.opfusion.io_dma_rbusy
+@22
+tcp.tcp.opfusion.io_dma_rdata_data[127:0]
+@28
+tcp.tcp.opfusion.io_dma_rdata_valid
+tcp.tcp.opfusion.io_dma_rid[2:0]
+@200
+-opfusion bias mem
+@24
+tcp.tcp.opfusion.SPRAM.addr[7:0]
+@28
+tcp.tcp.opfusion.SPRAM.clock
+tcp.tcp.opfusion.SPRAM.en
+@22
+tcp.tcp.opfusion.SPRAM.rdata[127:0]
+[color] 1
+tcp.tcp.opfusion.SPRAM.wdata[127:0]
+@28
+[color] 1
+tcp.tcp.opfusion.SPRAM.wr
+@200
+-opfusion oscale mem
+@24
+tcp.tcp.opfusion.SPRAM_1.addr[7:0]
+@28
+tcp.tcp.opfusion.SPRAM_1.clock
+tcp.tcp.opfusion.SPRAM_1.en
+@22
+tcp.tcp.opfusion.SPRAM_1.rdata[127:0]
+[color] 1
+tcp.tcp.opfusion.SPRAM_1.wdata[127:0]
+@28
+[color] 1
+tcp.tcp.opfusion.SPRAM_1.wr
+@200
+-opfusion odata
+@28
+[color] 4
+tcp.tcp.opfusion.io_i_data_0_valid
+@22
+[color] 4
+tcp.tcp.opfusion.io_i_data_0_bits[31:0]
+@28
+[color] 2
+tcp.tcp.opfusion.io_o_data_0_valid
+@22
+[color] 2
+tcp.tcp.opfusion.io_o_data_0_bits[31:0]
+tcp.tcp.opfusion.io_o_data_63_bits[31:0]
+@28
+tcp.tcp.opfusion.io_o_data_63_valid
+@22
+[color] 1
+tcp.tcp.opfusion.opfusion_data_0.io_i_bias_bits[31:0]
+[color] 1
+tcp.tcp.opfusion.opfusion_data_0.io_i_oscale_bits[31:0]
+tcp.tcp.opfusion.opfusion_data_0.convert0_data_REG[31:0]
+tcp.tcp.opfusion.opfusion_data_0.oscale_data_REG_2[31:0]
+@200
+-opfusion ch4 oscale regs
+@22
+tcp.tcp.opfusion.SPRAM_1.rdata[127:0]
+@28
+tcp.tcp.opfusion.oscale_mem_read_valid
+@24
+tcp.tcp.opfusion.oscale_mem_raddr[7:0]
+tcp.tcp.opfusion.oscale_mem_rsel[1:0]
+@22
+tcp.tcp.opfusion.oscale_mem_rdata[31:0]
+[color] 1
+tcp.tcp.opfusion.oscale_regs_0[31:0]
+tcp.tcp.opfusion.oscale_regs_1[31:0]
+tcp.tcp.opfusion.oscale_regs_4[31:0]
+@200
+-opfusion oscale raddr
+@28
+tcp.tcp.opfusion.io_i_data_0_valid
+tcp.tcp.opfusion.io_i_data_1_valid
+tcp.tcp.opfusion.oscale_load_en
+tcp.tcp.opfusion.SPRAM_1.wr
+@24
+tcp.tcp.opfusion.SPRAM_1.addr[7:0]
+@28
+tcp.tcp.opfusion.oscale_mem_read_start
+tcp.tcp.opfusion.oscale_mem_read_valid
+@24
+tcp.tcp.opfusion.oscale_mem_read_cnt[4:0]
+@22
+tcp.tcp.opfusion.SPRAM_1.rdata[127:0]
+@200
+-opfusion  bias raddr
+@28
+[color] 1
+tcp.tcp.opfusion.io_o_ready
+tcp.tcp.opfusion.clock
+tcp.tcp.opfusion.io_i_data_0_valid
+@24
+tcp.tcp.opfusion.io_i_data_0_bits[31:0]
+tcp.tcp.opfusion.owh_align64[23:0]
+tcp.tcp.opfusion.owh_align64_div2[22:0]
+tcp.tcp.opfusion.owh_cnt[23:0]
+tcp.tcp.opfusion.oc_cnt[6:0]
+tcp.tcp.opfusion.bias_mem_read_valid
+@22
+tcp.tcp.opfusion.SPRAM.rdata[127:0]
+@200
+-bias regs
+@22
+tcp.tcp.opfusion.oscale_regs_0[31:0]
+tcp.tcp.opfusion.oscale_regs_1[31:0]
+tcp.tcp.opfusion.bias_regs_0[31:0]
+tcp.tcp.opfusion.bias_regs_1[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

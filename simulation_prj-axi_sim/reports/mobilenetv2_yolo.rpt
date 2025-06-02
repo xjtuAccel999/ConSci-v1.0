@@ -1,0 +1,1600 @@
+[ log ]: Compilation time: 0:22.61
+[ log ]: Running simulation...
+2024-02-23 13:26:25
+[ log ]: stbi_load w = 768
+[ log ]: stbi_load h = 576
+[ log ]: stbi_load c = 3
+[ log ]: stbi_load desired_channels = 3
+[ log ]: models/mobilenetv2_yolo/mobilenetv2_yolo_int8.param is 14499 bytes
+[ log ]: models/mobilenetv2_yolo/mobilenetv2_yolo_int8.bin is 3918432 bytes
+[ log ]: Forward Scale on NPU, shape = (352, 352, 3, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (352, 352, 3, 1), dims = 3
+[ log ]: ifm_w = 352, ifm_h = 352, ifm_c = 3
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 32
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 127.83103, dequant_ptr = (nil), bias_ptr = 0x7f12ba136520 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 0
+[ log ]: ifm_w = 352, ifm_h = 352, ifm_c = 3
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 32
+[ log ]: ifm_base_addr = 0x7f12ba6ea100, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 0
+[ log ]: u_ih = 46, u_oh = 23
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 46, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12ba6ea100, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 352, ifm_h = 46, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 23, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 46, u_oh = 22
+[ log ]: ih_cnt_cur = 45, ih_cnt_next = 91, oh_cnt_cur = 23
+[ log ]: ifm_addr = 0x7f12ba6f9880, ofm_addr = 0x55998306e600
+[ log ]: ifm_w = 352, ifm_h = 46, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 22, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 2 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 46, u_oh = 22
+[ log ]: ih_cnt_cur = 89, ih_cnt_next = 135, oh_cnt_cur = 45
+[ log ]: ifm_addr = 0x7f12ba708a80, ofm_addr = 0x55998308ca00
+[ log ]: ifm_w = 352, ifm_h = 46, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 22, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 3 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 46, u_oh = 22
+[ log ]: ih_cnt_cur = 133, ih_cnt_next = 179, oh_cnt_cur = 67
+[ log ]: ifm_addr = 0x7f12ba717c80, ofm_addr = 0x5599830aae00
+[ log ]: ifm_w = 352, ifm_h = 46, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 22, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 4 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 46, u_oh = 22
+[ log ]: ih_cnt_cur = 177, ih_cnt_next = 223, oh_cnt_cur = 89
+[ log ]: ifm_addr = 0x7f12ba726e80, ofm_addr = 0x5599830c9200
+[ log ]: ifm_w = 352, ifm_h = 46, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 22, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 5 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 46, u_oh = 22
+[ log ]: ih_cnt_cur = 221, ih_cnt_next = 267, oh_cnt_cur = 111
+[ log ]: ifm_addr = 0x7f12ba736080, ofm_addr = 0x5599830e7600
+[ log ]: ifm_w = 352, ifm_h = 46, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 22, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 6 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 46, u_oh = 22
+[ log ]: ih_cnt_cur = 265, ih_cnt_next = 311, oh_cnt_cur = 133
+[ log ]: ifm_addr = 0x7f12ba745280, ofm_addr = 0x559983105a00
+[ log ]: ifm_w = 352, ifm_h = 46, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 22, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 7 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 43, u_oh = 21
+[ log ]: ih_cnt_cur = 309, ih_cnt_next = 355, oh_cnt_cur = 155
+[ log ]: ifm_addr = 0x7f12ba754480, ofm_addr = 0x559983123e00
+[ log ]: ifm_w = 352, ifm_h = 43, block_ic_offset = 3
+[ log ]: ofm_w = 176, ofm_h = 21, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba1365a0, bias_addr = 0x7f12ba136520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (32, 1, 30976, 1), dims = 3
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 32
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 32
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 38.57093, dequant_ptr = (nil), bias_ptr = 0x7f12ba1367a0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 32
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 32
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 0
+[ log ]: u_ih = 93, u_oh = 92
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 93, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 176, ifm_h = 93, block_ic_offset = 32
+[ log ]: ofm_w = 176, ofm_h = 92, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba136820, bias_addr = 0x7f12ba1367a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 1
+[ log ]: u_ih = 85, u_oh = 84
+[ log ]: ih_cnt_cur = 91, ih_cnt_next = 184, oh_cnt_cur = 92
+[ log ]: ifm_addr = 0x5599830cbe00, ofm_addr = 0x5599831bf700
+[ log ]: ifm_w = 176, ifm_h = 85, block_ic_offset = 32
+[ log ]: ofm_w = 176, ofm_h = 84, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba136820, bias_addr = 0x7f12ba1367a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 30976, 1), dims = 3
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 32
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 16
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 14.11331, dequant_ptr = (nil), bias_ptr = 0x7f12ba136d00 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 32
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 16
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 93, u_oh = 93
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 93, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 176, ifm_h = 93, block_ic_offset = 32
+[ log ]: ofm_w = 176, ofm_h = 93, block_oc_offset = 16
+[ log ]: oscale_addr = 0x7f12ba136d40, bias_addr = 0x7f12ba136d00
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 83, u_oh = 83
+[ log ]: ih_cnt_cur = 93, ih_cnt_next = 186, oh_cnt_cur = 93
+[ log ]: ifm_addr = 0x5599831c0d00, ofm_addr = 0x5599830cea00
+[ log ]: ifm_w = 176, ifm_h = 83, block_ic_offset = 32
+[ log ]: ofm_w = 176, ofm_h = 83, block_oc_offset = 16
+[ log ]: oscale_addr = 0x7f12ba136d40, bias_addr = 0x7f12ba136d00
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (32, 1, 30976, 1), dims = 3
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 16
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 96
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 39.70428, dequant_ptr = (nil), bias_ptr = 0x7f12ba1379e0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 16
+[ log ]: ofm_w = 176, ofm_h = 176, ofm_c = 96
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 93, u_oh = 93
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 93, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 176, ifm_h = 93, block_ic_offset = 16
+[ log ]: ofm_w = 176, ofm_h = 93, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba137b60, bias_addr = 0x7f12ba1379e0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 83, u_oh = 83
+[ log ]: ih_cnt_cur = 93, ih_cnt_next = 186, oh_cnt_cur = 93
+[ log ]: ifm_addr = 0x5599830cea00, ofm_addr = 0x7f12b9fdcb00
+[ log ]: ifm_w = 176, ifm_h = 83, block_ic_offset = 16
+[ log ]: ofm_w = 176, ofm_h = 83, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba137b60, bias_addr = 0x7f12ba1379e0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (96, 1, 30976, 1), dims = 3
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 96
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 96
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 14.29711, dequant_ptr = (nil), bias_ptr = 0x7f12ba1380a0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 0
+[ log ]: ifm_w = 176, ifm_h = 176, ifm_c = 96
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 96
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 0
+[ log ]: u_ih = 31, u_oh = 15
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 31, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 176, ifm_h = 31, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 15, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba138220, bias_addr = 0x7f12ba1380a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 31, u_oh = 15
+[ log ]: ih_cnt_cur = 29, ih_cnt_next = 60, oh_cnt_cur = 15
+[ log ]: ifm_addr = 0x7f12b9ed4b00, ofm_addr = 0x55998315fe00
+[ log ]: ifm_w = 176, ifm_h = 31, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 15, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba138220, bias_addr = 0x7f12ba1380a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 2 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 31, u_oh = 15
+[ log ]: ih_cnt_cur = 59, ih_cnt_next = 90, oh_cnt_cur = 30
+[ log ]: ifm_addr = 0x7f12b9f50700, ofm_addr = 0x55998317ed00
+[ log ]: ifm_w = 176, ifm_h = 31, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 15, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba138220, bias_addr = 0x7f12ba1380a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 3 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 31, u_oh = 15
+[ log ]: ih_cnt_cur = 89, ih_cnt_next = 120, oh_cnt_cur = 45
+[ log ]: ifm_addr = 0x7f12b9fcc300, ofm_addr = 0x55998319dc00
+[ log ]: ifm_w = 176, ifm_h = 31, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 15, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba138220, bias_addr = 0x7f12ba1380a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 4 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 31, u_oh = 15
+[ log ]: ih_cnt_cur = 119, ih_cnt_next = 150, oh_cnt_cur = 60
+[ log ]: ifm_addr = 0x7f12ba047f00, ofm_addr = 0x5599831bcb00
+[ log ]: ifm_w = 176, ifm_h = 31, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 15, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba138220, bias_addr = 0x7f12ba1380a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 5 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 27, u_oh = 13
+[ log ]: ih_cnt_cur = 149, ih_cnt_next = 180, oh_cnt_cur = 75
+[ log ]: ifm_addr = 0x7f12ba0c3b00, ofm_addr = 0x5599831dba00
+[ log ]: ifm_w = 176, ifm_h = 27, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 13, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba138220, bias_addr = 0x7f12ba1380a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (96, 1, 7744, 1), dims = 3
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 96
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 24
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 36.90905, dequant_ptr = (nil), bias_ptr = 0x7f12ba139000 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 96
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 24
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 62, u_oh = 62
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 88, ifm_h = 62, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 62, block_oc_offset = 24
+[ log ]: oscale_addr = 0x7f12ba139060, bias_addr = 0x7f12ba139000
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 26, u_oh = 26
+[ log ]: ih_cnt_cur = 62, ih_cnt_next = 124, oh_cnt_cur = 62
+[ log ]: ifm_addr = 0x5599831c0d00, ofm_addr = 0x559983054140
+[ log ]: ifm_w = 88, ifm_h = 26, block_ic_offset = 96
+[ log ]: ofm_w = 88, ofm_h = 26, block_oc_offset = 24
+[ log ]: oscale_addr = 0x7f12ba139060, bias_addr = 0x7f12ba139000
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Split on CPU, shape = (88, 88, 24, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (88, 88, 24, 1), dims = 3
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 24
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 144
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 21.63091, dequant_ptr = (nil), bias_ptr = 0x7f12ba13a500 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 24
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 144
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 88, u_oh = 88
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 186, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 88, ifm_h = 88, block_ic_offset = 24
+[ log ]: ofm_w = 88, ofm_h = 88, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13a740, bias_addr = 0x7f12ba13a500
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (160, 1, 7744, 1), dims = 3
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 144
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 144
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 39.61902, dequant_ptr = (nil), bias_ptr = 0x7f12ba13af80 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 144
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 144
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 0
+[ log ]: u_ih = 37, u_oh = 36
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 37, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 88, ifm_h = 37, block_ic_offset = 144
+[ log ]: ofm_w = 88, ofm_h = 36, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13b1c0, bias_addr = 0x7f12ba13af80
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 37, u_oh = 35
+[ log ]: ih_cnt_cur = 35, ih_cnt_next = 72, oh_cnt_cur = 36
+[ log ]: ifm_addr = 0x7f12b9ed5600, ofm_addr = 0x5599832aec00
+[ log ]: ifm_w = 88, ifm_h = 37, block_ic_offset = 144
+[ log ]: ofm_w = 88, ofm_h = 35, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13b1c0, bias_addr = 0x7f12ba13af80
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 2 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 1
+[ log ]: u_ih = 18, u_oh = 17
+[ log ]: ih_cnt_cur = 70, ih_cnt_next = 107, oh_cnt_cur = 71
+[ log ]: ifm_addr = 0x7f12b9f4db00, ofm_addr = 0x559983327100
+[ log ]: ifm_w = 88, ifm_h = 18, block_ic_offset = 144
+[ log ]: ofm_w = 88, ofm_h = 17, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13b1c0, bias_addr = 0x7f12ba13af80
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (160, 1, 7744, 1), dims = 3
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 144
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 24
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 51.92767, dequant_ptr = (nil), bias_ptr = 0x7f12ba13c860 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 144
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 24
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 37, u_oh = 37
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 37, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 88, ifm_h = 37, block_ic_offset = 144
+[ log ]: ofm_w = 88, ofm_h = 37, block_oc_offset = 24
+[ log ]: oscale_addr = 0x7f12ba13c8c0, bias_addr = 0x7f12ba13c860
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 37, u_oh = 37
+[ log ]: ih_cnt_cur = 37, ih_cnt_next = 74, oh_cnt_cur = 37
+[ log ]: ifm_addr = 0x5599832b2300, ofm_addr = 0x5599831441e0
+[ log ]: ifm_w = 88, ifm_h = 37, block_ic_offset = 144
+[ log ]: ofm_w = 88, ofm_h = 37, block_oc_offset = 24
+[ log ]: oscale_addr = 0x7f12ba13c8c0, bias_addr = 0x7f12ba13c860
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 2 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 14, u_oh = 14
+[ log ]: ih_cnt_cur = 74, ih_cnt_next = 111, oh_cnt_cur = 74
+[ log ]: ifm_addr = 0x559983331600, ofm_addr = 0x5599831474c0
+[ log ]: ifm_w = 88, ifm_h = 14, block_ic_offset = 144
+[ log ]: ofm_w = 88, ofm_h = 14, block_oc_offset = 24
+[ log ]: oscale_addr = 0x7f12ba13c8c0, bias_addr = 0x7f12ba13c860
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (88, 88, 24, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (88, 88, 24, 1), dims = 3
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 24
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 144
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 18.15348, dequant_ptr = (nil), bias_ptr = 0x7f12ba13dd60 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 24
+[ log ]: ofm_w = 88, ofm_h = 88, ofm_c = 144
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 88, u_oh = 88
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 186, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 88, ifm_h = 88, block_ic_offset = 24
+[ log ]: ofm_w = 88, ofm_h = 88, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13dfa0, bias_addr = 0x7f12ba13dd60
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (160, 1, 7744, 1), dims = 3
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 144
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 144
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 29.20186, dequant_ptr = (nil), bias_ptr = 0x7f12ba13e7e0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 0
+[ log ]: ifm_w = 88, ifm_h = 88, ifm_c = 144
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 144
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 0
+[ log ]: u_ih = 37, u_oh = 18
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 37, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 88, ifm_h = 37, block_ic_offset = 144
+[ log ]: ofm_w = 44, ofm_h = 18, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13ea20, bias_addr = 0x7f12ba13e7e0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 1 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 37, u_oh = 18
+[ log ]: ih_cnt_cur = 35, ih_cnt_next = 72, oh_cnt_cur = 18
+[ log ]: ifm_addr = 0x5599832ab500, ofm_addr = 0x55998306db00
+[ log ]: ifm_w = 88, ifm_h = 37, block_ic_offset = 144
+[ log ]: ofm_w = 44, ofm_h = 18, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13ea20, bias_addr = 0x7f12ba13e7e0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: --------------------- task 2 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 17, u_oh = 8
+[ log ]: ih_cnt_cur = 71, ih_cnt_next = 108, oh_cnt_cur = 36
+[ log ]: ifm_addr = 0x559983327100, ofm_addr = 0x55998308ca00
+[ log ]: ifm_w = 88, ifm_h = 17, block_ic_offset = 144
+[ log ]: ofm_w = 44, ofm_h = 8, block_oc_offset = 144
+[ log ]: oscale_addr = 0x7f12ba13ea20, bias_addr = 0x7f12ba13e7e0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (160, 1, 1936, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 144
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 33.19859, dequant_ptr = (nil), bias_ptr = 0x7f12ba1400c0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 144
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 32
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 74, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 144
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba140140, bias_addr = 0x7f12ba1400c0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Split on CPU, shape = (44, 44, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (44, 44, 32, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 32
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 25.99693, dequant_ptr = (nil), bias_ptr = 0x7f12ba141a00 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 32
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 372, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 32
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 192
+[ log ]: oscale_addr = 0x7f12ba141d00, bias_addr = 0x7f12ba141a00
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (192, 1, 1936, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 57.45448, dequant_ptr = (nil), bias_ptr = 0x7f12ba142720 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 192
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 192
+[ log ]: oscale_addr = 0x7f12ba142a20, bias_addr = 0x7f12ba142720
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (192, 1, 1936, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 59.63361, dequant_ptr = (nil), bias_ptr = 0x7f12ba144580 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 32
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 192
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba144600, bias_addr = 0x7f12ba144580
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (44, 44, 32, 1), dims = 3
+[ log ]: Forward Split on CPU, shape = (44, 44, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (44, 44, 32, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 32
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 20.58983, dequant_ptr = (nil), bias_ptr = 0x7f12ba145ec0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 32
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 372, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 32
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 192
+[ log ]: oscale_addr = 0x7f12ba1461c0, bias_addr = 0x7f12ba145ec0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (192, 1, 1936, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 47.82066, dequant_ptr = (nil), bias_ptr = 0x7f12ba146be0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 192
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 192
+[ log ]: oscale_addr = 0x7f12ba146ee0, bias_addr = 0x7f12ba146be0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (192, 1, 1936, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 32
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 59.48194, dequant_ptr = (nil), bias_ptr = 0x7f12ba148a40 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 32
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 192
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 32
+[ log ]: oscale_addr = 0x7f12ba148ac0, bias_addr = 0x7f12ba148a40
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (44, 44, 32, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (44, 44, 32, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 32
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 19.98182, dequant_ptr = (nil), bias_ptr = 0x7f12ba14a380 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 32
+[ log ]: ofm_w = 44, ofm_h = 44, ofm_c = 192
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 44, u_oh = 44
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 372, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 32
+[ log ]: ofm_w = 44, ofm_h = 44, block_oc_offset = 192
+[ log ]: oscale_addr = 0x7f12ba14a680, bias_addr = 0x7f12ba14a380
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (192, 1, 1936, 1), dims = 3
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 192
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 40.74420, dequant_ptr = (nil), bias_ptr = 0x7f12ba14b0a0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 0
+[ log ]: ifm_w = 44, ifm_h = 44, ifm_c = 192
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 192
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 0
+[ log ]: u_ih = 44, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 44, ifm_h = 44, block_ic_offset = 192
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 192
+[ log ]: oscale_addr = 0x7f12ba14b3a0, bias_addr = 0x7f12ba14b0a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (192, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 192
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 47.90017, dequant_ptr = (nil), bias_ptr = 0x7f12ba14e700 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 192
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 124, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 192
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 64
+[ log ]: oscale_addr = 0x7f12ba14e800, bias_addr = 0x7f12ba14e700
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Split on CPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 31.84028, dequant_ptr = (nil), bias_ptr = 0x7f12ba154940 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 372, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 64
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba154f40, bias_addr = 0x7f12ba154940
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 65.72028, dequant_ptr = (nil), bias_ptr = 0x7f12ba156320 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba156920, bias_addr = 0x7f12ba156320
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 83.16928, dequant_ptr = (nil), bias_ptr = 0x7f12ba15cf80 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 64
+[ log ]: oscale_addr = 0x7f12ba15d080, bias_addr = 0x7f12ba15cf80
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: Forward Split on CPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 28.67669, dequant_ptr = (nil), bias_ptr = 0x7f12ba1631c0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 372, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 64
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba1637c0, bias_addr = 0x7f12ba1631c0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 59.91552, dequant_ptr = (nil), bias_ptr = 0x7f12ba164ba0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba1651a0, bias_addr = 0x7f12ba164ba0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 82.59129, dequant_ptr = (nil), bias_ptr = 0x7f12ba16b800 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 64
+[ log ]: oscale_addr = 0x7f12ba16b900, bias_addr = 0x7f12ba16b800
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: Forward Split on CPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 25.46424, dequant_ptr = (nil), bias_ptr = 0x7f12ba171a40 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 372, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 64
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba172040, bias_addr = 0x7f12ba171a40
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 62.46960, dequant_ptr = (nil), bias_ptr = 0x7f12ba173420 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba173a20, bias_addr = 0x7f12ba173420
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 74.94948, dequant_ptr = (nil), bias_ptr = 0x7f12ba17a080 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 64
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 64
+[ log ]: oscale_addr = 0x7f12ba17a180, bias_addr = 0x7f12ba17a080
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (22, 22, 64, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 23.17699, dequant_ptr = (nil), bias_ptr = 0x7f12ba1802c0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 64
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 372, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 64
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba1808c0, bias_addr = 0x7f12ba1802c0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 48.49850, dequant_ptr = (nil), bias_ptr = 0x7f12ba181ca0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 384
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 384
+[ log ]: oscale_addr = 0x7f12ba1822a0, bias_addr = 0x7f12ba181ca0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (384, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 96
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 56.23383, dequant_ptr = (nil), bias_ptr = 0x7f12ba18b900 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 384
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 96
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 62, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 384
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba18ba80, bias_addr = 0x7f12ba18b900
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Split on CPU, shape = (22, 22, 96, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (22, 22, 96, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 96
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 40.31141, dequant_ptr = (nil), bias_ptr = 0x7f12ba199440 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 96
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 248, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 96
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba199d40, bias_addr = 0x7f12ba199440
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (576, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 55.06373, dequant_ptr = (nil), bias_ptr = 0x7f12ba19bae0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba19c3e0, bias_addr = 0x7f12ba19bae0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (576, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 96
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 70.71403, dequant_ptr = (nil), bias_ptr = 0x7f12ba1aa540 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 96
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba1aa6c0, bias_addr = 0x7f12ba1aa540
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (22, 22, 96, 1), dims = 3
+[ log ]: Forward Split on CPU, shape = (22, 22, 96, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (22, 22, 96, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 96
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 36.30442, dequant_ptr = (nil), bias_ptr = 0x7f12ba1b8080 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 96
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 248, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 96
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba1b8980, bias_addr = 0x7f12ba1b8080
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (576, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 64.38897, dequant_ptr = (nil), bias_ptr = 0x7f12ba1ba720 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba1bb020, bias_addr = 0x7f12ba1ba720
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (576, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 96
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 70.58451, dequant_ptr = (nil), bias_ptr = 0x7f12ba1c9180 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 96
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 96
+[ log ]: oscale_addr = 0x7f12ba1c9300, bias_addr = 0x7f12ba1c9180
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (22, 22, 96, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (22, 22, 96, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 96
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 23.90057, dequant_ptr = (nil), bias_ptr = 0x7f12ba1d6cc0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 96
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 248, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 96
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba1d75c0, bias_addr = 0x7f12ba1d6cc0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Split on CPU, shape = (22, 22, 576, 1), dims = 3
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (22, 22, 576, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 576
+[ log ]: kernel = 3, stride = 2
+[ log ]: padding_left = 1, padding_right = 0, padding_top = 1, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 53.43870, dequant_ptr = (nil), bias_ptr = 0x7f12ba1d9340 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 576
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba1d9c40, bias_addr = 0x7f12ba1d9340
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (576, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 576
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 160
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 64.86185, dequant_ptr = (nil), bias_ptr = 0x7f12ba1f0da0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 576
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 160
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 82, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 576
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 160
+[ log ]: oscale_addr = 0x7f12ba1f1020, bias_addr = 0x7f12ba1f0da0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Split on CPU, shape = (11, 11, 160, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (11, 11, 160, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 160
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 46.48388, dequant_ptr = (nil), bias_ptr = 0x7f12ba216ae0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 160
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 297, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 160
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 960
+[ log ]: oscale_addr = 0x7f12ba2179e0, bias_addr = 0x7f12ba216ae0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (960, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 47.12313, dequant_ptr = (nil), bias_ptr = 0x7f12ba21ab00 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 49, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 960
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 960
+[ log ]: oscale_addr = 0x7f12ba21ba00, bias_addr = 0x7f12ba21ab00
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (960, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 160
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 80.21323, dequant_ptr = (nil), bias_ptr = 0x7f12ba242160 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 160
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 49, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 960
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 160
+[ log ]: oscale_addr = 0x7f12ba2423e0, bias_addr = 0x7f12ba242160
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (11, 11, 160, 1), dims = 3
+[ log ]: Forward Split on CPU, shape = (11, 11, 160, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (11, 11, 160, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 160
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 39.32975, dequant_ptr = (nil), bias_ptr = 0x7f12ba267ea0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 160
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 297, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 160
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 960
+[ log ]: oscale_addr = 0x7f12ba268da0, bias_addr = 0x7f12ba267ea0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (960, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 57.79254, dequant_ptr = (nil), bias_ptr = 0x7f12ba26bec0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 49, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 960
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 960
+[ log ]: oscale_addr = 0x7f12ba26cdc0, bias_addr = 0x7f12ba26bec0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (960, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 160
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 61.88610, dequant_ptr = (nil), bias_ptr = 0x7f12ba293520 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 160
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 49, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 960
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 160
+[ log ]: oscale_addr = 0x7f12ba2937a0, bias_addr = 0x7f12ba293520
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (11, 11, 160, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (11, 11, 160, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 160
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 24.47088, dequant_ptr = (nil), bias_ptr = 0x7f12ba2b9260 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 160
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 297, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 160
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 960
+[ log ]: oscale_addr = 0x7f12ba2ba160, bias_addr = 0x7f12ba2b9260
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (960, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 55.30891, dequant_ptr = (nil), bias_ptr = 0x7f12ba2bd280 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 960
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 49, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 960
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 960
+[ log ]: oscale_addr = 0x7f12ba2be180, bias_addr = 0x7f12ba2bd280
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (960, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 320
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 97.44463, dequant_ptr = (nil), bias_ptr = 0x7f12ba30a0e0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 960
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 320
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 49, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 960
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 320
+[ log ]: oscale_addr = 0x7f12ba30a5e0, bias_addr = 0x7f12ba30a0e0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (320, 1, 121, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 320
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 1280
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 94.00813, dequant_ptr = (nil), bias_ptr = 0x7f12ba36eb40 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 320
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 1280
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- block oc task 0 ---------------------
+[ log ]: block_oc_limit = 1024, ofm_c = 1280, is_finish = 0
+[ log ]: block_oc_base = 0, block_oc_offset = 1024
+[ log ]: block_wgt_baseaddr = 0x7f12ba30ab40, block_ofm_baseaddr = 0x55998304ec00
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 148, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 320
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 1024
+[ log ]: oscale_addr = 0x7f12ba36ff40, bias_addr = 0x7f12ba36eb40
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+
+[ log ]: --------------------- block oc task 1 ---------------------
+[ log ]: block_oc_limit = 1024, ofm_c = 1280, is_finish = 0
+[ log ]: block_oc_base = 1024, block_oc_offset = 256
+[ log ]: block_wgt_baseaddr = 0x7f12ba35ab40, block_ofm_baseaddr = 0x5599830cec00
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 148, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x5599830cec00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 320
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 256
+[ log ]: oscale_addr = 0x7f12ba370f40, bias_addr = 0x7f12ba36fb40
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 1024
+
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (11, 11, 1280, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 1280
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 1280
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 27.20785, dequant_ptr = (nil), bias_ptr = 0x7f12ba374080 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 1280
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 1280
+[ log ]: ifm_base_addr = 0x55998304ec00, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- block oc task 0 ---------------------
+[ log ]: block_oc_limit = 1024, ofm_c = 1280, is_finish = 0
+[ log ]: block_oc_base = 0, block_oc_offset = 1024
+[ log ]: block_wgt_baseaddr = 0x7f12ba371380, block_ofm_baseaddr = 0x559983140f00
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 46, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x55998304ec00, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 1024
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 1024
+[ log ]: oscale_addr = 0x7f12ba375480, bias_addr = 0x7f12ba374080
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+
+[ log ]: --------------------- block oc task 1 ---------------------
+[ log ]: block_oc_limit = 1024, ofm_c = 1280, is_finish = 0
+[ log ]: block_oc_base = 1024, block_oc_offset = 256
+[ log ]: block_wgt_baseaddr = 0x7f12ba373780, block_ofm_baseaddr = 0x5599831c0f00
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 186, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x5599830cec00, ofm_addr = 0x5599831c0f00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 256
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 256
+[ log ]: oscale_addr = 0x7f12ba376480, bias_addr = 0x7f12ba375080
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 1024
+
+[ log ]: Forward Convolution on NPU, shape = (11, 11, 1280, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 1280
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 576
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 22.59755, dequant_ptr = (nil), bias_ptr = 0x7f12ba42a8c0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 1280
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 576
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 37, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 1280
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba42b1c0, bias_addr = 0x7f12ba42a8c0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Split on CPU, shape = (11, 11, 576, 1), dims = 3
+[ log ]: Forward Convolution on NPU, shape = (11, 11, 576, 1), dims = 3
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 576
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 75
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 17.66775, dequant_ptr = (nil), bias_ptr = 0x7f12ba4e2e00 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 11, ifm_h = 11, ifm_c = 576
+[ log ]: ofm_w = 11, ofm_h = 11, ofm_c = 75
+[ log ]: ifm_base_addr = 0x559983233000, ofm_base_addr = 0x55998304ec00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 11, u_oh = 11
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 82, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983233000, ofm_addr = 0x55998304ec00
+[ log ]: ifm_w = 11, ifm_h = 11, block_ic_offset = 576
+[ log ]: ofm_w = 11, ofm_h = 11, block_oc_offset = 75
+[ log ]: oscale_addr = 0x7f12ba4e2f40, bias_addr = 0x7f12ba4e2e00
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward DeconvolutionDepthWise on CPU, shape = (11, 11, 576, 1), dims = 3
+[ log ]: Forward Pooling on NPU, shape input = (21, 21, 576, 1), dims = 3 ,pooling_type = 0,kernel = 2, stride = 1 ,padding = (1, 1, 1, 1) ,pad_mode = 0, pad_value = 0.000000
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (22, 22, 576, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 53.43870, dequant_ptr = (nil), bias_ptr = 0x7f12ba42d860 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x7f12b9e5d100, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x7f12b9e5d100, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba42e160, bias_addr = 0x7f12ba42d860
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (576, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 15.02755, dequant_ptr = (nil), bias_ptr = 0x7f12ba47fac0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x7f12b9e5d100
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x7f12b9e5d100
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba4803c0, bias_addr = 0x7f12ba47fac0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Eltwise on NPU, shape = (22, 22, 576, 1), dims = 3
+[ log ]: Forward ConvolutionDepthWise on NPU, shape = (22, 22, 576, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 3, stride = 1
+[ log ]: padding_left = 1, padding_right = 1, padding_top = 1, padding_bottom = 1
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 12.50913, dequant_ptr = (nil), bias_ptr = 0x7f12ba482140 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 1, padding_bottom = 1
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x559983462600, ofm_base_addr = 0x559983366500
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 1, u_padding_bottom = 1
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983462600, ofm_addr = 0x559983366500
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba482a40, bias_addr = 0x7f12ba482140
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (576, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 1, act_op = 1, act_alpha = 0.000000
+[ log ]: quant_scale = 18.11193, dequant_ptr = (nil), bias_ptr = 0x7f12ba4d43a0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 576
+[ log ]: ifm_base_addr = 0x559983366500, ofm_base_addr = 0x559983140f00
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983366500, ofm_addr = 0x559983140f00
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 576
+[ log ]: oscale_addr = 0x7f12ba4d4ca0, bias_addr = 0x7f12ba4d43a0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Convolution on NPU, shape = (576, 1, 484, 1), dims = 3
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 75
+[ log ]: kernel = 1, stride = 1
+[ log ]: padding_left = 0, padding_right = 0, padding_top = 0, padding_bottom = 0
+[ log ]: bias_en = 1, requant_en = 0, act_op = 0, act_alpha = 0.000000
+[ log ]: quant_scale = 17.18559, dequant_ptr = (nil), bias_ptr = 0x7f12ba4f08c0 
+[ log ]: --------------------- origin ---------------------
+[ log ]: padding_top = 0, padding_bottom = 0
+[ log ]: ifm_w = 22, ifm_h = 22, ifm_c = 576
+[ log ]: ofm_w = 22, ofm_h = 22, ofm_c = 75
+[ log ]: ifm_base_addr = 0x559983140f00, ofm_base_addr = 0x559983233000
+
+[ log ]: --------------------- task 0 ---------------------
+[ log ]: u_padding_top = 0, u_padding_bottom = 0
+[ log ]: u_ih = 22, u_oh = 22
+[ log ]: ih_cnt_cur = 0, ih_cnt_next = 41, oh_cnt_cur = 0
+[ log ]: ifm_addr = 0x559983140f00, ofm_addr = 0x559983233000
+[ log ]: ifm_w = 22, ifm_h = 22, block_ic_offset = 576
+[ log ]: ofm_w = 22, ofm_h = 22, block_oc_offset = 75
+[ log ]: oscale_addr = 0x7f12ba4f0a00, bias_addr = 0x7f12ba4f08c0
+[ log ]: block_use_bias & bias_en = 1, block_use_bias = 1, block_oc_base = 0
+[ log ]: Forward Yolov3DetectionOutput on CPU, shape = (11, 11, 75, 1), dims = 3
+12 = 0.98661 at 127.36 227.25 198.70 x 302.38
+7 = 0.97553 at 463.21 79.62 215.98 x 92.96
+[ log ]: imshow save image to image.png
+[ log ]: waitKey stub
+[ log ]: FREQ = 500MHz, CYCLES = 4942907, TIME = 9.886ms, FPS = 101.155
+[ log ]: POOL_TIME = 0.106336, 1.07564%
+[ log ]: GEMM_TIME = 9.084022, 91.88947%
+[ log ]: simulation time: 8:26.97

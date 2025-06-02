@@ -1,0 +1,128 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Jan 24 08:22:24 2024
+[*]
+[dumpfile] "(null)"
+[savefile] "/home/qin/ncnnAccel/simulation_prj/axi_w.gtkw"
+[timestart] 4708
+[size] 3840 2032
+[pos] -1 -1
+*-3.000000 4826 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.axi_send.
+[treeopen] tcp.tcp.axi_send.axi_send_cell0.
+[sst_width] 398
+[signals_width] 617
+[sst_expanded] 1
+[sst_vpaned_height] 617
+@22
+tcp.tcp.axi_send.axi_send_cell0.addr_fifo_io_enq_bits[63:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.addr_fifo_io_enq_valid
+@22
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_enq_bits[127:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_enq_ready
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_enq_valid
+@22
+tcp.tcp.axi_send.axi_send_cell0.size_fifo_io_enq_bits[31:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.size_fifo_io_enq_valid
+@24
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_count[10:0]
+@22
+tcp.tcp.axi_send.axi_send_cell0.addr_fifo_io_deq_bits[63:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.addr_fifo_io_deq_ready
+tcp.tcp.axi_send.axi_send_cell0.addr_fifo_io_deq_valid
+@22
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_deq_bits[127:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_deq_ready
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_deq_valid
+@22
+tcp.tcp.axi_send.axi_send_cell0.size_fifo_io_deq_bits[31:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.size_fifo_io_deq_ready
+@200
+-
+@28
+tcp.tcp.axi_send.axi_send_cell0.clock
+@22
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_awaddr[63:0]
+@24
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_awlen[7:0]
+@28
+[color] 2
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_awready
+[color] 2
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_awvalid
+@22
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_wdata[127:0]
+@200
+-
+@24
+[color] 3
+tcp.tcp.axi_send.axi_send_cell0.state[1:0]
+@22
+[color] 3
+tcp.tcp.axi_send.axi_send_cell0.fifo_addr_left[63:0]
+@24
+[color] 3
+tcp.tcp.axi_send.axi_send_cell0.fifo_size_left[31:0]
+@22
+tcp.tcp.axi_send.axi_send_cell0.fifo_addr_left[63:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.cross_4K
+@22
+tcp.tcp.axi_send.axi_send_cell0.addr_4K[63:0]
+tcp.tcp.axi_send.axi_send_cell0.addr_end[63:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.size_gt_256
+@200
+-
+@24
+[color] 3
+tcp.tcp.axi_send.axi_send_cell0.size_send_fifo_io_enq_bits[7:0]
+@28
+[color] 3
+tcp.tcp.axi_send.axi_send_cell0.size_send_fifo_io_enq_ready
+[color] 3
+tcp.tcp.axi_send.axi_send_cell0.size_send_fifo_io_enq_valid
+@24
+tcp.tcp.axi_send.axi_send_cell0.size_send_fifo_io_deq_bits[7:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.size_send_fifo_io_deq_ready
+tcp.tcp.axi_send.axi_send_cell0.size_send_fifo_io_deq_valid
+@24
+tcp.tcp.axi_send.axi_send_cell0.size_send_fifo_io_count[4:0]
+@200
+-
+-
+@28
+tcp.tcp.axi_send.axi_send_cell0.data_fifo_io_deq_valid
+[color] 1
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_wlast
+[color] 4
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_wready
+@29
+[color] 3
+tcp.tcp.axi_send.axi_send_cell0.io_axi_m_wvalid
+@24
+tcp.tcp.axi_send.axi_send_cell0.last_cnt[7:0]
+@28
+tcp.tcp.axi_send.axi_send_cell0.wlast_state
+@200
+-
+@24
+tcp.tcp.axi_send.axi_send_cell0.send_len[7:0]
+tcp.tcp.axi_send.axi_send_cell0.outstanding_cnt[4:0]
+@28
+tcp.io_gemm_task_done
+tcp.tcp.opfusion_io_gemm_task_done
+tcp.tcp.axi_send_io_empty
+tcp.tcp.axi_send.axi_send_cell0_io_congested
+tcp.tcp.axi_send.axi_send_cell1_io_congested
+[pattern_trace] 1
+[pattern_trace] 0

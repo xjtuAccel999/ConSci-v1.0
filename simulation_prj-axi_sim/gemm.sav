@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon May 22 08:43:24 2023
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/QinPro/simulation/wave.vcd"
+[dumpfile_mtime] "Mon May 22 08:09:54 2023"
+[dumpfile_size] 723135046
+[savefile] "/home/jiexxpu/ncnnAccel/QinPro/simulation/gemm.sav"
+[timestart] 38600
+[size] 1920 1043
+[pos] 2488 240
+*-3.980261 38639 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.accmem.
+[sst_width] 438
+[signals_width] 371
+[sst_expanded] 1
+[sst_vpaned_height] 415
+@28
+tcp.tcp.accmem.acc_mem_25_clock
+@200
+-***AccMem***
+@28
+[color] 2
+tcp.tcp.accmem.acc_mem_25.state[1:0]
+[color] 1
+tcp.tcp.accmem.acc_mem_25.en
+@200
+-out
+@28
+tcp.tcp.accmem.acc_mem_0_io_out_valid
+@22
+tcp.tcp.accmem.acc_mem_0_io_out_bits_data0[31:0]
+@200
+-ofm
+@28
+tcp.tcp.accmem.acc_mem_25.io_ofm_valid
+@22
+tcp.tcp.accmem.acc_mem_25.io_ofm_bits_addr[4:0]
+tcp.tcp.accmem.acc_mem_25.io_ofm_bits_data0[31:0]
+@200
+-mem
+@28
+tcp.tcp.accmem.acc_mem_25.mem_0_ren
+@22
+tcp.tcp.accmem.acc_mem_25.mem_0_raddr[4:0]
+tcp.tcp.accmem.acc_mem_25.mem_0_rdata[31:0]
+tcp.tcp.accmem.acc_mem_25.mem_0_wdata[31:0]
+@200
+-accmem10
+@28
+tcp.tcp.accmem.acc_mem_10.keep_state
+tcp.tcp.accmem.acc_mem_10.io_out_valid
+@22
+tcp.tcp.accmem.acc_mem_10.io_out_bits_data0[31:0]
+@23
+tcp.tcp.accmem.acc_mem_10.io_out_bits_data1[31:0]
+@200
+-***OfmBuf***
+@40020
+tcp.tcp.ofmBuf.io_data_in_25_bits[31:0]
+@28
+tcp.tcp.ofmBuf.io_data_in_25_valid
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,89 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Jan 10 12:11:42 2024
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/liang5056/simulation_prj/wave.vcd"
+[dumpfile_mtime] "Wed Jan 10 12:11:35 2024"
+[dumpfile_size] 20579845
+[savefile] "/home/jiexxpu/ncnnAccel/liang5056/simulation_prj/wgtbuf.sav"
+[timestart] 0
+[size] 2488 1376
+[pos] -1 -1
+*-11.570041 27340 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.wgtBuf.
+[sst_width] 367
+[signals_width] 432
+[sst_expanded] 1
+[sst_vpaned_height] 876
+@200
+-######dma
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.clock
+@200
+-dma_io
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_en
+@22
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_addr[63:0]
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_areq
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_dma_rid[2:0]
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_dma_rbusy
+@200
+-
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_busy_down
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_areq_down_inst_io_edge
+tcp.tcp.wgtBuf.wgt_8bit_dma.task_done
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_task_one_done
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_task_all_done
+@200
+-dma0
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_en
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_areq
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_dma_rbusy
+@22
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_addr[63:0]
+@24
+tcp.tcp.wgtBuf.wgt_8bit_dma.io_dma_rareq_dmaSize[31:0]
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.dma_busy_down
+tcp.tcp.wgtBuf.io_dma0_rdata_valid
+@22
+tcp.tcp.wgtBuf.io_dma0_rdata_data[127:0]
+@200
+-dma1
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma_1.dma_en
+tcp.tcp.wgtBuf.wgt_8bit_dma_1.dma_areq
+tcp.tcp.wgtBuf.wgt_8bit_dma_1.io_dma_rbusy
+@22
+tcp.tcp.wgtBuf.wgt_8bit_dma_1.dma_addr[63:0]
+tcp.tcp.wgtBuf.wgt_8bit_dma_1.io_dma_rareq_dmaSize[31:0]
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma_1.dma_busy_down
+tcp.tcp.wgtBuf.io_dma1_rdata_valid
+@22
+tcp.tcp.wgtBuf.io_dma1_rdata_data[127:0]
+@200
+-buf_read
+@22
+tcp.tcp.wgtBuf.wgtbuf_raddr[12:0]
+tcp.tcp.wgtBuf.wgt_buffer_rdata[255:0]
+@28
+tcp.tcp.wgtBuf.wgt_buffer_ren
+tcp.tcp.wgtBuf.w_out_ready
+tcp.tcp.wgtBuf.wgt_buffer0_r_valid
+tcp.tcp.wgtBuf.wgt_buffer1_r_valid
+@200
+-buf_state
+@28
+tcp.tcp.wgtBuf.wgt_buffer0_full
+tcp.tcp.wgtBuf.wgt_buffer1_full
+@29
+tcp.tcp.wgtBuf.wgtbuf_w_sel
+[pattern_trace] 1
+[pattern_trace] 0

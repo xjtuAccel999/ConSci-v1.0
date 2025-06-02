@@ -1,0 +1,194 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Tue Nov 14 07:59:50 2023
+[*]
+[dumpfile] "/home/qin/ncnnAccel/simulation/wave.vcd"
+[dumpfile_mtime] "Tue Nov 14 07:59:26 2023"
+[dumpfile_size] 343217451
+[savefile] "/home/qin/ncnnAccel/simulation/opfusion.sav"
+[timestart] 0
+[size] 1920 964
+[pos] -1 -1
+*-13.000000 17440 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.dma_send.
+[treeopen] tcp.tcp.opfusion.
+[treeopen] tcp.tcp.opfusion.cell0.
+[treeopen] tcp.tcp.opfusion.cell1.
+[sst_width] 385
+[signals_width] 513
+[sst_expanded] 1
+[sst_vpaned_height] 271
+@28
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_en
+@200
+-transpose
+-channel0
+@22
+tcp.tcp.opfusion.cell0.transposeUnit.io_i_data_data_0[7:0]
+tcp.tcp.opfusion.cell0.transposeUnit.io_i_data_data_1[7:0]
+tcp.tcp.opfusion.cell0.transposeUnit.io_i_data_data_2[7:0]
+tcp.tcp.opfusion.cell0.transposeUnit.io_i_data_data_3[7:0]
+@28
+tcp.tcp.opfusion.cell0.transposeUnit.io_i_data_valid
+@22
+tcp.tcp.opfusion.cell0.transposeUnit.io_o_data_bits[127:0]
+@28
+tcp.tcp.opfusion.cell0.transposeUnit.io_o_data_valid
+@22
+tcp.tcp.opfusion.cell0.transposeUnit.add_zero_cnt[5:0]
+@28
+tcp.tcp.opfusion.cell0.transposeUnit.add_zero_valid
+@22
+tcp.tcp.opfusion.cell0.transposeUnit.block_num[31:0]
+tcp.tcp.opfusion.cell0.transposeUnit.block_num_cnt[31:0]
+@28
+tcp.tcp.opfusion.cell0.transposeUnit.cnt[2:0]
+@22
+tcp.tcp.opfusion.cell0.transposeUnit.sel[5:0]
+tcp.tcp.opfusion.cell0.transposeUnit.datagp_t[255:0]
+@200
+-channel0 input
+@22
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_i_data_bits[127:0]
+@28
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_i_data_valid
+@22
+tcp.tcp.dma_send.dma_send_cell0.data_fifo_io_count[10:0]
+@28
+tcp.tcp.dma_send.dma_send_cell0.addr_fifo_io_deq_valid
+tcp.tcp.dma_send.dma_send_cell0.data_fifo_io_deq_valid
+tcp.tcp.dma_send.dma_send_cell0.size_fifo_io_deq_valid
+@200
+-channel1 input
+@22
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_i_data_bits[127:0]
+@28
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_i_data_valid
+@24
+tcp.tcp.dma_send.dma_send_cell1.data_fifo_io_count[10:0]
+@28
+tcp.tcp.dma_send.dma_send_cell1.data_fifo_io_deq_valid
+tcp.tcp.dma_send.dma_send_cell1.addr_fifo_io_deq_valid
+tcp.tcp.dma_send.dma_send_cell1.size_fifo_io_deq_valid
+tcp.tcp.dma_send.dma_send_cell0.io_dma_areq_dmaEn
+tcp.tcp.dma_send.dma_send_cell0.io_dma_id
+@22
+tcp.tcp.dma_send.dma_send_cell0.io_dma_areq_dmaAddr[63:0]
+tcp.tcp.dma_send.dma_send_cell0.io_dma_areq_dmaSize[31:0]
+@28
+tcp.tcp.dma_send.dma_send_cell0.io_dma_areq_dmaAreq
+tcp.tcp.dma_send.dma_send_cell0.io_dma_busy
+@22
+tcp.tcp.dma_send.dma_send_cell0.io_dma_data_data[127:0]
+@28
+tcp.tcp.dma_send.dma_send_cell0.io_dma_data_valid
+@200
+-cfg
+@c00024
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+@28
+(0)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(1)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(2)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(3)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(4)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(5)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(6)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(7)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(8)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(9)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(10)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(11)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(12)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(13)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(14)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+(15)tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_w[15:0]
+@1401200
+-group_end
+@24
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_h[15:0]
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_c[15:0]
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_whstep[31:0]
+@28
+tcp.tcp.opfusion.cell0.nhwc_ctrl.clock
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_i_data_valid
+@24
+tcp.tcp.opfusion.cell0.nhwc_ctrl.owh_align64_eq_base[31:0]
+@c00024
+[color] 2
+tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+@28
+(0)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+(1)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+(2)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+(3)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+(4)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+(5)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+(6)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+(7)tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_base[7:0]
+@1401200
+-group_end
+@25
+[color] 2
+tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_align16_div16[7:0]
+@28
+[color] 2
+tcp.tcp.opfusion.cell0.nhwc_ctrl.task_done
+@24
+tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_offest
+tcp.tcp.opfusion.cell0.nhwc_ctrl.owh_offset[4:0]
+tcp.tcp.opfusion.cell0.nhwc_ctrl.owh_base[31:0]
+@22
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_dma_data[127:0]
+@28
+[color] 3
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_dma_data_valid
+@22
+tcp.tcp.opfusion.cell0.nhwc_ctrl.owh[31:0]
+@24
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_owhc_c[15:0]
+[color] 5
+tcp.tcp.opfusion.cell0.nhwc_ctrl.oc_t[7:0]
+[color] 5
+tcp.tcp.opfusion.cell0.nhwc_ctrl.owh_t[31:0]
+[color] 1
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_dma_size[31:0]
+@28
+[color] 3
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_dma_size_valid
+tcp.tcp.opfusion.cell0.nhwc_ctrl.state1
+tcp.tcp.opfusion.cell0.nhwc_ctrl.clock
+@24
+tcp.tcp.opfusion.cell0.nhwc_ctrl.owh_baseaddr[31:0]
+tcp.tcp.opfusion.cell0.nhwc_ctrl.owh_addr[31:0]
+@28
+[color] 3
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_dma_addr_valid
+@22
+[color] 1
+tcp.tcp.opfusion.cell0.nhwc_ctrl.io_dma_addr[63:0]
+@200
+-channel 1
+@24
+tcp.tcp.opfusion.cell1.nhwc_ctrl.owh_base[31:0]
+tcp.tcp.opfusion.cell1.nhwc_ctrl.owh_offset[4:0]
+[color] 3
+tcp.tcp.opfusion.cell1.nhwc_ctrl.owh_t[31:0]
+[color] 3
+tcp.tcp.opfusion.cell1.nhwc_ctrl.oc_t[7:0]
+@22
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_dma_data[127:0]
+@28
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_dma_data_valid
+@24
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_dma_size[31:0]
+@28
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_dma_size_valid
+@22
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_dma_addr[63:0]
+@28
+tcp.tcp.opfusion.cell1.nhwc_ctrl.io_dma_addr_valid
+[pattern_trace] 1
+[pattern_trace] 0

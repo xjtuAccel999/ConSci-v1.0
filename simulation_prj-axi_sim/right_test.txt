@@ -1,0 +1,1 @@
+iw_t=16, ih_t=8, ic_t=32, oc_t=64, k_t=1, s_t=1, pd_left_t=0, pd_right_t=0, pd_top_t=0, pd_bottom_t=0, op=0, layout_en=0, requant_en=1

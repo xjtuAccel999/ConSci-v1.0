@@ -1,0 +1,124 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Wed Nov  1 07:28:28 2023
+[*]
+[dumpfile] "/home/jiexxpu/ncnnAccel/work/simulation/wave.vcd"
+[dumpfile_mtime] "Wed Nov  1 07:28:23 2023"
+[dumpfile_size] 3670090063
+[savefile] "/home/jiexxpu/ncnnAccel/work/simulation/wgtbuf_8bit.sav"
+[timestart] 9694
+[size] 1920 1043
+[pos] -1 -1
+*-4.316244 9775 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.wgtBuf.
+[treeopen] tcp.tcp.wgtBuf.wgt_8bit_dma.
+[sst_width] 367
+[signals_width] 432
+[sst_expanded] 1
+[sst_vpaned_height] 631
+@28
+tcp.tcp.wgtBuf.io_wgt_en
+@22
+tcp.tcp.wgtBuf.io_wgt_baseaddr[63:0]
+@24
+tcp.tcp.wgtBuf.io_ofm_whc_c[15:0]
+tcp.tcp.wgtBuf.io_ofm_whc_h[15:0]
+tcp.tcp.wgtBuf.io_ofm_whc_w[15:0]
+tcp.tcp.wgtBuf.io_ic[11:0]
+tcp.tcp.wgtBuf.io_kernel[2:0]
+@28
+tcp.tcp.wgtBuf.start_t0_inst_io_edge
+tcp.tcp.wgtBuf.start_t1
+@24
+tcp.tcp.wgtBuf.owh[23:0]
+tcp.tcp.wgtBuf.owh_align[23:0]
+tcp.tcp.wgtBuf.owh_align_div64[17:0]
+@28
+tcp.tcp.wgtBuf.wgt_start_one_task
+tcp.tcp.wgtBuf.wgt_8bit_dma.start_one_task_keep
+tcp.tcp.wgtBuf.wgt_8bit_dma.en
+@22
+[color] 2
+tcp.tcp.wgtBuf.io_dma_rareq_dmaAddr[63:0]
+@28
+[color] 2
+tcp.tcp.wgtBuf.io_dma_rareq_dmaAreq
+[color] 2
+tcp.tcp.wgtBuf.io_dma_rareq_dmaEn
+@24
+[color] 2
+tcp.tcp.wgtBuf.io_dma_rareq_dmaSize[31:0]
+@28
+[color] 2
+tcp.tcp.wgtBuf.io_dma_rbusy
+@22
+[color] 2
+tcp.tcp.wgtBuf.io_dma_rdata_data[127:0]
+@28
+[color] 2
+tcp.tcp.wgtBuf.io_dma_rdata_valid
+@24
+[color] 2
+tcp.tcp.wgtBuf.wgt_8bit_dma.oc_align_div32[6:0]
+tcp.tcp.wgtBuf.wgt_8bit_dma.oc_align_div32_cnt[6:0]
+@28
+tcp.tcp.wgtBuf.dma_valid_cnt
+tcp.tcp.wgtBuf.TPRAM.wen
+@24
+tcp.tcp.wgtBuf.wgt_buffer_waddr[13:0]
+tcp.tcp.wgtBuf.TPRAM.waddr[14:0]
+@22
+tcp.tcp.wgtBuf.TPRAM.wdata[255:0]
+@28
+tcp.tcp.wgtBuf.wgt_8bit_dma.clock
+tcp.tcp.wgtBuf.wgt_8bit_dma_io_task_one_done
+[color] 1
+tcp.tcp.wgtBuf.wgt_one_output_done
+tcp.tcp.wgtBuf.wgt_buffer0_full
+tcp.tcp.wgtBuf.wgt_buffer1_full
+[color] 4
+tcp.tcp.wgtBuf.wgt_buffer_sel
+[color] 2
+tcp.tcp.wgtBuf.wgt_start_one_task
+[color] 1
+tcp.tcp.wgtBuf.TPRAM.ren
+@24
+tcp.tcp.wgtBuf.wgt_buffer_raddr[13:0]
+tcp.tcp.wgtBuf.TPRAM.raddr[14:0]
+@22
+tcp.tcp.wgtBuf.TPRAM.rdata[255:0]
+tcp.tcp.wgtBuf.owh_align_div64[17:0]
+@24
+tcp.tcp.wgtBuf.wgt_buffer_repeat_cnt[17:0]
+@22
+tcp.tcp.wgtBuf.wgt_buffer_oc_cnt[6:0]
+@28
+tcp.tcp.wgtBuf.io_o_data_valid
+[color] 1
+tcp.tcp.wgtBuf.wgt_8bit_dma_io_task_all_done
+@200
+-
+@28
+tcp.tcp.wgtBuf.io_o_data_valid
+@22
+tcp.tcp.wgtBuf.io_o_data_bits_0[31:0]
+tcp.tcp.wgtBuf.io_o_data_bits_1[31:0]
+@28
+tcp.tcp.wgtBuf.clock
+@22
+tcp.tcp.wgtBuf.wgt_buffer_dwconv_fixed_cnt[4:0]
+@24
+tcp.tcp.wgtBuf.wgt_buffer_raddr[13:0]
+@28
+tcp.tcp.wgtBuf.dw_op
+tcp.tcp.wgtBuf.wgt_buffer_dwconv_change_addr_pluse
+@25
+tcp.tcp.wgtBuf.wgt_buffer_dwconv_next_addr[5:0]
+@24
+tcp.tcp.wgtBuf.wgt_buffer_dwconv_k2_idx[5:0]
+tcp.tcp.wgtBuf.k2[5:0]
+tcp.tcp.wgtBuf.ic_align_div32[6:0]
+[pattern_trace] 1
+[pattern_trace] 0

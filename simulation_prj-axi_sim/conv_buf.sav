@@ -1,0 +1,43 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun May 21 07:21:35 2023
+[*]
+[dumpfile] "/home/qin/ncnnAccel/simulation/wave.vcd"
+[dumpfile_mtime] "Sun May 21 07:16:14 2023"
+[dumpfile_size] 191185465
+[savefile] "/home/qin/ncnnAccel/simulation/conv_buf.sav"
+[timestart] 16170
+[size] 1920 964
+[pos] -1 -1
+*-3.000000 16187 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tcp.
+[treeopen] tcp.tcp.
+[treeopen] tcp.tcp.opfusion.
+[sst_width] 336
+[signals_width] 454
+[sst_expanded] 1
+[sst_vpaned_height] 270
+@40020
+tcp.tcp.opfusion.io_o_data_32_bits[31:0]
+@28
+tcp.tcp.opfusion.io_o_data_32_valid
+@40020
+tcp.tcp.opfusion.io_o_data_0_bits[31:0]
+@28
+tcp.tcp.opfusion.io_o_data_0_valid
+@24
+tcp.tcp.opfusion.test_cnt_o_valid0_0[4:0]
+tcp.tcp.opfusion.test_cnt_o_valid0_1[9:0]
+@23
+[color] 2
+tcp.tcp.opfusion.io_i_data_0_bits_data1[31:0]
+@28
+[color] 2
+tcp.tcp.opfusion.io_i_data_0_valid
+@24
+[color] 2
+tcp.tcp.opfusion.test_cnt_i_valid0_1[9:0]
+[color] 2
+tcp.tcp.opfusion.test_cnt_i_valid0_0[4:0]
+[pattern_trace] 1
+[pattern_trace] 0
